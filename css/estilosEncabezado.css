@@ -1,0 +1,25 @@
+.opcionesM{
+    font-size: 25px;
+    font-family: 'Concert One', cursive;
+}
+
+.encabezado{
+    background-color: rgb(224, 240, 224);
+
+}
+
+li.opcionesM2{
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+}
+
+li.opcion1{
+    padding-left: 1160px;
+}
+
+li.opcion2{
+    text-align: center;
+    justify-content: center;
+    padding-left: 621px;
+}
+
