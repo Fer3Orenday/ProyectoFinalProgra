@@ -54,7 +54,7 @@
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color:rgb(153, 190, 153); ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./imagenes/logo.png" alt="" width="40%" height="30%" >
+                <img src="./imagenes/logo.png" alt="" width="40%" height="30%">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -102,6 +102,16 @@
                 </li>
             </ul>
     </nav>
+
+
+    <!-- VIDEO DE INICIO  -->
+    <video width="320" height="240" autoplay>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+
 
 
 
