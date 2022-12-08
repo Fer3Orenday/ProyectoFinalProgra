@@ -108,7 +108,7 @@
 
 
 
-    <!-- VIDEO DE INICIO  -->
+    <!-- VIDEO DE INICIOO -->
     
         <video width="100%"  controls>
             <source src="./imagenes/video.mp4" type="video/mp4">
