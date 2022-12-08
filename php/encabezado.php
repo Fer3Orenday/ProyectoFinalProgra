@@ -22,7 +22,7 @@
     <!-------------------- ENCABEZADO PARTE1 ----------------->
 
 
-    <nav class="navbar navbar-expand " class="encabezado" style="background-color:rgb(224, 240, 224);">
+    <nav class="navbar navbar-expand " class="encabezado" style="background-color:rgb(217, 217, 235);">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="opcionesM2 opcion1">
@@ -51,7 +51,7 @@
 
 
     <!-------------------- ENCABEZADO PARTE 2 ----------------->
-    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:rgb(153, 190, 153); ">
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:rgb(171, 171, 218); ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="../imagenes/logo.png" alt="" width="40%" height="30%" >
@@ -94,7 +94,7 @@
 
     <!-------------------- ENCABEZADO PARTE 3 ----------------->
 
-    <nav class="navbar navbar-expand " class="encabezado" style="background-color:rgb(224, 240, 224);">
+    <nav class="navbar navbar-expand " class="encabezado" style="background-color:rgb(217, 217, 235);">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="opcionesM2 opcion2">
