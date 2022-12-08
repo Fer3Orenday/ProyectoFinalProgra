@@ -23,7 +23,7 @@
     <!-------------------- ENCABEZADO PARTE1 ----------------->
 
 
-    <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 600px; ">
+    <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 500px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="opcionesM2 opcion1">
@@ -37,7 +37,7 @@
 
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">hola</a>
+                    <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
                 </li>
 
                 <li class="opcionesM2">
@@ -61,7 +61,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav" text-align: center;>
+                <div class="collapse navbar-collapse" id="navbarNav" >
                     <ul class="navbar-nav">
                         <li class="opcionesM">
                             <a class="nav-link active" aria-current="page" href="#">Opcion1</a>
@@ -124,7 +124,7 @@
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+ 
             </div>
         </div>
         <div class="card">
@@ -132,7 +132,7 @@
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
             </div>
         </div>
         <div class="card">
@@ -140,7 +140,7 @@
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
             </div>
         </div>
     </div>

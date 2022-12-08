@@ -23,7 +23,7 @@
 
     <div >
         <!-- Footer -->
-        <footer class="text-center text-lg-start text-black" style="background-color: #929fba">
+        <footer class="text-center text-lg-start text-black" style="background-color: rgb(171, 171, 218)">
             <!-- Grid container -->
             <div class="container p-4 pb-0">
                 <!-- Section: Links -->
