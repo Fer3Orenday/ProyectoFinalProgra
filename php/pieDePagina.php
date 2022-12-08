@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/25e2610697.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-image: url('fondoRegalos.jpg') ;">
     <!-- PIE DE PAGINA -->
 
     <div >

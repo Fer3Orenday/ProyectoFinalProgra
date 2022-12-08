@@ -12,13 +12,14 @@
     <!-- link estilos -->
     <link rel="stylesheet" href="./css/estilosEncabezado.css">
     <link rel="stylesheet" href="./css/estilosImagen.css">
+    <link rel="stylesheet" href="./css/estilosimgNavidad.css">
     <!-- link fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
     <!-- link fontawesome -->
     <script src="https://kit.fontawesome.com/25e2610697.js" crossorigin="anonymous"></script>
 </head>
 
-<body style="background-color: rgb(253, 253, 246);">
+<body style="background-color: rgb(253, 253, 246); ">
 
     <!-------------------- ENCABEZADO PARTE1 ----------------->
 
@@ -144,6 +145,26 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+
+
+
+    <div>
+    <div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">I am John Doe</h1>
+    <p>And I'm a Photographer</p>
+    <button>Hire me</button>
+  </div>
+</div>
+</div>
+
+
+
+
+
     <br>
 
 
