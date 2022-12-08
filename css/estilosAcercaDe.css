@@ -22,3 +22,21 @@
 .fondoo{
     background-color: blue;
 }
+
+.est2{
+    font-family: 'Concert One', cursive;
+    text-align: center;
+    color: rgb(7, 5, 5);
+}
+
+
+
+/* .img3:hover{
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5)
+} */
+
+.img3:hover {filter: blur(5px);}

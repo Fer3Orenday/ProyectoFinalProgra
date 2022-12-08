@@ -24,7 +24,7 @@
     <!-------------------- ENCABEZADO PARTE1 ----------------->
 
 
-    <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 500px; ">
+    <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="opcionesM2 opcion1">
@@ -110,7 +110,7 @@
     <br>
 
     <div>
-        <h1 class="est" >Acerca de Drokey</h1>
+        <h1 class="est">Acerca de Drokey</h1>
     </div>
 
     <br>
@@ -122,10 +122,10 @@
 
             </tr>
         </thead>
-        <tbody  >
+        <tbody>
             <tr>
 
-                <td><img src="../imgsAcercaDe/img3.jpg" alt="" style="width:100% ;" ></td>
+                <td><img src="../imgsAcercaDe/img3.jpg" alt="" style="width:100% ;" class="img3"></td>
                 <td class="textoss tex22" style="padding-top: 160px ;">Visión
                     <br>
                     “Ser la mejor empresa nacional e internacional destacándonos por la buena calidad,
@@ -134,18 +134,18 @@
                 </td>
             </tr>
             <tr>
-                <td class="textoss fondoo" style="padding-top: 175px ; ">Misión
+                <td class="textoss fondoo" style="padding-top: 175px ; " >Misión
                     <br>
                     Llevar inspiración e innovación a cada atleta del mundo.
                 </td>
 
-                <td><img src="../imgsAcercaDe/img4.webp" alt="" style="width:100% ;"></td>
+                <td><img src="../imgsAcercaDe/img4.webp" alt="" style="width:100% ;" class="img3"></td>
 
             </tr>
             <tr>
 
 
-                <td><img src="../imgsAcercaDe/img5.webp" alt="" style="width:100% ;"></td>
+                <td><img src="../imgsAcercaDe/img5.webp" alt="" style="width:100% ;" class="img3"></td>
                 <td class="textoss fondoo" style="padding-top: 160px ;">Objetivo
                     <br>
                     Ofrecer calzado en la máxima calidad para que nuestros clientes practiquen
@@ -156,11 +156,18 @@
         </tbody>
     </table>
 
-
-
     <br>
 
-
+    <div style="background-image: url('../imgsAcercaDe/img7.jpg');" class="est2 ">
+        <h1>Con nosotros
+            <br>
+            siempre tienes la
+            <br>
+            mejor opción
+            <br>
+            para tus actividades
+        </h1>
+    </div>
 
     <br>
 
