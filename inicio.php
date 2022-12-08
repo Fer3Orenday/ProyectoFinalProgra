@@ -61,7 +61,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav" >
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="opcionesM">
                             <a class="nav-link active" aria-current="page" href="#">Opcion1</a>
@@ -124,7 +124,7 @@
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
- 
+
             </div>
         </div>
         <div class="card">
@@ -145,11 +145,31 @@
         </div>
     </div>
     <br>
+    <br>
+    <br>
+
+
+
+    <div>
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1 style="font-size:50px">I am John Doe</h1>
+                <p>And I'm a Photographer</p>
+                <button>Hire me</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <br>
 
 
     <!-- PIE DE PAGINA -->
 
-    <div >
+    <div>
         <!-- Footer -->
         <footer class="text-center text-lg-start text-black" style="background-color:  rgb(171, 171, 218)">
             <!-- Grid container -->
@@ -164,9 +184,9 @@
                                 Drokey
                             </h6>
                             <p>
-                                Siendo la mejor compañia de tienda deportiva desde 2014, brindamos 
+                                Siendo la mejor compañia de tienda deportiva desde 2014, brindamos
                                 la mejor calidad en nuestros productos. Siempre acompañandote a donde
-                                vayas. 
+                                vayas.
                             </p>
                         </div>
                         <!-- Grid column -->

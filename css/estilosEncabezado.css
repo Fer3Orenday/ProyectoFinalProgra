@@ -5,7 +5,7 @@
 
 .encabezado{
     background-color: rgb(200, 228, 200);
-    background-color: rgb(171, 171, 218);
+    background-color: rgb(101, 101, 165);
     background-color: rgb(217, 217, 235);
 
 }
@@ -24,4 +24,6 @@ li.opcion2{
     justify-content: center;
     padding-left: 621px;
 }
+
+
 
