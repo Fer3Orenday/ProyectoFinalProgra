@@ -192,6 +192,37 @@
 
     <br>
 
+    <table  style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="./imgsInicio/mujer.jpg" alt="" style="width:100% ;" ></td>
+
+                <td>
+                    <img src="./imgsInicio/hombre.jpg" alt="" style="width:100% ;" >
+                </td>
+
+                <td><img src="./imgsInicio/niños.jpg" alt="" style="width:100% ;" ></td>
+
+            </tr>
+
+            <tr>
+                <td>MUJER</td>
+                <td>HOMBRE</td>
+                <td>NIÑOS</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
 
 
 
