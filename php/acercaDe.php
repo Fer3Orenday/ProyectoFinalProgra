@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Acerca de</title>
 
     <!-- LINK bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <!-- link estilos -->
-    <link rel="stylesheet" href="./css/estilosEncabezado.css">
-    <link rel="stylesheet" href="./css/estilosImagen.css">
-    <link rel="stylesheet" href="./css/estilosimgNavidad.css">
+    <link rel="stylesheet" href="../css/estilosEncabezado.css">
+    <link rel="stylesheet" href="../css/estilosAcercaDe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
     <!-- link fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
     <!-- link fontawesome -->
     <script src="https://kit.fontawesome.com/25e2610697.js" crossorigin="anonymous"></script>
 </head>
 
-<body style="background-color: rgb(253, 253, 246); ">
+<body>
 
     <!-------------------- ENCABEZADO PARTE1 ----------------->
 
@@ -57,7 +57,7 @@
         <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(171, 171, 218); position: sticky; ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="./imagenes/logo.png" alt="" width="40%" height="30%">
+                    <img src="../imagenes/logo.png" alt="" width="40%" height="30%">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -77,7 +77,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="contactanos.html">Contáctanos</a>
+                            <a class="nav-link active" aria-current="page" href="#">Contáctanos</a>
                         </li>
                         <li class="opcionesM">
                             <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
@@ -101,89 +101,79 @@
     <nav class="navbar navbar-expand " class="encabezado" style="background-color:rgb(217, 217, 235); position: sticky;">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="opcionesM2 opcion2">
-                    <a class="nav-link active" aria-current="page" href="#">¡Nuevos lanzamientos cada dia!</a>
+                <li class="opcionesM2 " style="padding-left: 523px;">
+                    <a class="nav-link active" aria-current="page" href="#" >¡Nuevos lanzamientos cada dia!</a>
                 </li>
             </ul>
     </nav>
 
-
-
-    <!-- VIDEO DE INICIO  -->
-
-    <video width="100%" controls>
-        <source src="./imagenes/video.mp4" type="video/mp4">
-
-        Your browser does not support HTML video.
-    </video>
-
-
-    <!-- 3 IMAGENES  -->
-    <div class="card-group">
-        <div class="card">
-            <img src="./imagenes/img1.jpg" class="card-img-top imagen2" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-
-            </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/img2.webp" class="card-img-top imagen2" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-
-            </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/img3.jpg" class="card-img-top imagen2" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-
-            </div>
-        </div>
-    </div>
     <br>
-    <br>
-    <br>
-
-
 
     <div>
-<<<<<<< HEAD
-    <div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">I am John Doe</h1>
-    <p>And I'm a Photographer</p>
-    <button>Hire me</button>
-  </div>
-</div>
-</div>
-=======
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1 style="font-size:50px">I am John Doe</h1>
-                <p>And I'm a Photographer</p>
-                <button>Hire me</button>
-            </div>
-        </div>
+        <h1 class="est">Acerca de Drokey</h1>
     </div>
->>>>>>> 76f026c607070704123004b20bf959cf42d2114a
-
-
-
-
 
     <br>
 
 
-    <!-- PIE DE PAGINA -->
+    <table class="table" style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td><img src="../imgsAcercaDe/img3.jpg" alt="" style="width:100% ;" class="img3"></td>
+                <td class="textoss tex22" style="padding-top: 160px ; background-image: url(../imgsAcercaDe/img8.webp);">Visión
+                    <br>
+                    “Ser la mejor empresa nacional e internacional destacándonos por la buena calidad,
+                    servicio y comodidad a nuestros clientes.
+                    Queremos que nuestro producto sea vendido y utilizado en todas las partes del mundo.”
+                </td>
+            </tr>
+            <tr>
+                <td class="textoss fondoo" style="padding-top: 175px ; background-image: url(../imgsAcercaDe/img8.webp);" >Misión
+                    <br>
+                    Llevar inspiración e innovación a cada atleta del mundo.
+                </td>
+
+                <td><img src="../imgsAcercaDe/img4.webp" alt="" style="width:100% ;" class="img3"></td>
+
+            </tr>
+            <tr>
+
+
+                <td><img src="../imgsAcercaDe/img5.webp" alt="" style="width:100% ;" class="img3"></td>
+                <td class="textoss fondoo" style="padding-top: 160px ; background-image: url(../imgsAcercaDe/img8.webp);">Objetivo
+                    <br>
+                    Ofrecer calzado en la máxima calidad para que nuestros clientes practiquen
+                    su deporte favorito con la máxima
+                    comodidad posible para poder mejorar la su experiencia a la hora de la práctica.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <div style="background-image: url('../imgsAcercaDe/img7.jpg');" class="est2 ">
+        <h1>Con nosotros
+            <br>
+            siempre tienes la
+            <br>
+            mejor opción
+            <br>
+            para tus actividades
+        </h1>
+    </div>
+
+    <br>
 
     <div>
         <!-- Footer -->
-        <footer class="text-center text-lg-start text-black" style="background-color:  rgb(171, 171, 218)">
+        <footer class="text-center text-lg-start text-black" style="background-color: rgb(171, 171, 218)">
             <!-- Grid container -->
             <div class="container p-4 pb-0">
                 <!-- Section: Links -->
@@ -276,11 +266,6 @@
         <!-- Footer -->
     </div>
     <!-- End of .container -->
-
-
-
-
-
 
 
 

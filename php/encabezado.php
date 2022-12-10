@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
     <!-- link fontawesome -->
     <script src="https://kit.fontawesome.com/25e2610697.js" crossorigin="anonymous"></script>
+    <!-- FAVICON  -->
+    <link rel="icon" type="image/x-icon" href="../imagenes/favicon.png">
 </head>
 
 <body>
@@ -102,12 +104,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="opcionesM2 opcion2">
-                    <a class="nav-link active" aria-current="page" href="#">¡Nuevos lanzamientos cada dia!</a>
+                    <a class="nav-link active" aria-current="page" href="#" style="padding-left: 430px;">¡Nuevos lanzamientos cada dia!</a>
                 </li>
             </ul>
     </nav>
-
-
 
 
 
