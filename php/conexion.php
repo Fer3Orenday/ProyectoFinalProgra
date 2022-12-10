@@ -1,14 +1,14 @@
 <?php
-###Conexion a la base de datos
- $servidor='localhost:33065';
- $cuenta='root';
- $password='';
- $bd='tienda';
-  
- //conexion a la base de datos
- $conexion = new mysqli($servidor,$cuenta,$password,$bd);
+$servidor = 'localhost';
+$cuenta = 'root';
+$password = '';
+$bd = 'tienda';
 
- if ($conexion->connect_errno){
-      die('Error en la conexion');
- }
+$conexion = new mysqli($servidor,$cuenta,$password,$bd);
+if ($conexion->connect_errno) {
+  die('Error en la conexion');
+}
+
+
+
 ?>
