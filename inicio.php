@@ -124,6 +124,52 @@
     </video>
 
 
+    <table class="table" style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td><img src="./imgsInicio/fondoFut.jpg" alt="" style="width:100% ;" class="img3"></td>
+
+                <td class="seleccion" style="padding-top: 160px ; background-image: url(./imgsInicio/fondoVerde.webp);">
+                    Apoya a tu seleccion favorita con los mejores tenis!
+
+                    La mejor temporada ya esta aqui.
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <table class="table" style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="./imgsInicio/tenis11.jpg" alt="" style="width:100% ;" class="img3"></td>
+
+                <td>
+                    <img src="./imgsInicio/tenis2.jpg" alt="" style="width:100%">
+                </td>
+
+                <td><img src="./imgsInicio/tenis5.webp" alt="" style="width:100% ;" class="img3"></td>
+
+                <td><img src="./imgsInicio/tenis4.jpg" alt="" style="width:100% ;" class="img3"></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+
     <!-- 3 IMAGENES  -->
     <div class="card-group">
         <div class="card">
@@ -150,15 +196,17 @@
     </div>
     <br>
 
-    <div style="background-image: url('./imgsInicio/fondoNavidad.jpg');" >
+    <div style="background-image: url('./imgsInicio/fondoNavidad.jpg');">
         <h1 class="fondNavidad">
             <br>
-            Para esta navidad 
+            Para esta navidad
             <br>
             Regala Drokey
+
             <br>
+            <a class="btn btn-primary" href="./php/tienda.php" role="button" style="background-color: blue;">Comprar</a>
             <br>
-         
+
         </h1>
     </div>
 
