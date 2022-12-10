@@ -12,17 +12,19 @@
     <!-- link estilos -->
     <link rel="stylesheet" href="./css/estilosEncabezado.css">
     <link rel="stylesheet" href="./css/estilosImagen.css">
-    <link rel="stylesheet" href="./css/estilosimgNavidad.css">
+    <link rel="stylesheet" href="./css/estilosPagInicio.css">
     <!-- link fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
     <!-- link fontawesome -->
     <script src="https://kit.fontawesome.com/25e2610697.js" crossorigin="anonymous"></script>
 </head>
 
-<body style="background-color: rgb(253, 253, 246); ">
+<body style="background-color: rgb(253, 253, 246);">
 
     <!-------------------- ENCABEZADO PARTE1 ----------------->
-
 
     <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -62,7 +64,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav" >
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="opcionesM">
                             <a class="nav-link active" aria-current="page" href="#">Opcion1</a>
@@ -102,10 +104,14 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="opcionesM2 opcion2">
-                    <a class="nav-link active" aria-current="page" href="#">¡Nuevos lanzamientos cada dia!</a>
+                    <a class="nav-link active" aria-current="page" href="#" style="padding-left: 430px;">¡Nuevos lanzamientos cada dia!</a>
                 </li>
             </ul>
     </nav>
+
+
+
+
 
 
 
@@ -118,35 +124,133 @@
     </video>
 
 
+    <table class="table" style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td><img src="./imgsInicio/fondoFut.jpg" alt="" style="width:100% ;" class="img3 "></td>
+
+                <td class="seleccion" style="padding-top: 160px ; background-image: url(./imgsInicio/fondoVerde.webp);">
+                    Apoya a tu seleccion favorita con los mejores tenis!
+
+                    La mejor temporada ya esta aqui.
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <table class="table" style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="./imgsInicio/tenis11.jpg" alt="" style="width:100% ;" class="img4"></td>
+
+                <td>
+                    <img src="./imgsInicio/tenis2.jpg" alt="" style="width:100% ;" class="img4">
+                </td>
+
+                <td><img src="./imgsInicio/tenis5.webp" alt="" style="width:100% ;" class="img4"></td>
+
+                <td><img src="./imgsInicio/tenis4.jpg" alt="" style="width:100% ;" class="img4"></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+
+    <div style="background-image: url('./imgsInicio/fondoNavidad.jpg');">
+        <h1 class="fondNavidad">
+            <br>
+            Para esta navidad
+            <br>
+            Regala Drokey
+
+            <br>
+            <a class="btn btn-primary" href="./php/tienda.php" role="button" style="background-color: blue;">Comprar</a>
+            <br>
+
+        </h1>
+    </div>
+    <br>
+
+    <div>
+        <h3 style="font-family: 'Concert One', cursive;">¿Para quién compras?</h3>
+    </div>
+
+
+    <br>
+
+    <table  style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="./imgsInicio/mujer.jpg" alt="" style="width:100% ;" ></td>
+
+                <td>
+                    <img src="./imgsInicio/hombre.jpg" alt="" style="width:100% ;" >
+                </td>
+
+                <td><img src="./imgsInicio/niños.jpg" alt="" style="width:100% ;" ></td>
+
+            </tr>
+
+            <tr>
+                <td>MUJER</td>
+                <td>HOMBRE</td>
+                <td>NIÑOS</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+
+
+
+
     <!-- 3 IMAGENES  -->
     <div class="card-group">
         <div class="card">
-            <img src="./imagenes/img1.jpg" class="card-img-top imagen2" alt="...">
+            <img src="./imagenes/img1.jpg" class="card-img-top imagen2 img4" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
- 
-            </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/img2.webp" class="card-img-top imagen2" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text imgss">Seguridad en cada paso</p>
 
             </div>
         </div>
         <div class="card">
-            <img src="./imagenes/img3.jpg" class="card-img-top imagen2" alt="...">
+            <img src="./imagenes/img2.webp" class="card-img-top imagen2 img4" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text imgss">Todo para mejorar tu rendimiento.</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/img3.jpg" class="card-img-top imagen2 img4" alt="...">
+            <div class="card-body">
+                <p class="card-text imgss">Los tenis del momento</p>
 
             </div>
         </div>
     </div>
-    <br>
-    <br>
     <br>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -189,26 +293,10 @@
 </div>
 
 
-    <div>
-    <div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">I am John Doe</h1>
-    <p>And I'm a Photographer</p>
-    <button>Hire me</button>
-  </div>
-</div>
-</div>
-
-
-
-
-
-    <br>
-
 
     <!-- PIE DE PAGINA -->
 
-    <div >
+    <div>
         <!-- Footer -->
         <footer class="text-center text-lg-start text-black" style="background-color:  rgb(171, 171, 218)">
             <!-- Grid container -->
@@ -223,9 +311,9 @@
                                 Drokey
                             </h6>
                             <p>
-                                Siendo la mejor compañia de tienda deportiva desde 2014, brindamos 
+                                Siendo la mejor compañia de tienda deportiva desde 2014, brindamos
                                 la mejor calidad en nuestros productos. Siempre acompañandote a donde
-                                vayas. 
+                                vayas.
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -279,7 +367,7 @@
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
 
                             <!-- Instagram -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://instagram.com/drokey_sport?igshid=ZDdkNTZiNTM=" role="button"><i class="fab fa-instagram"></i></a>
 
                             <!-- Linkedin -->
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
