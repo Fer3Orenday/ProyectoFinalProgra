@@ -4,38 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjeta</title>
-
-    <link rel="stylesheet" href="../css/estiloTarjeta.css">
-
+    <title>Pago</title>
+    <link rel="stylesheet" href="../css/estilosPago.css">
 </head>
 <body>
     
-    <div class="body-text">Agrega la informacion de Pago de tu Tarjeta</div>
-  <form>
-    <div class="form-container">
-      <div class="personal-information">
-        <h1>Informacion de Pago</h1>
-      </div> 
-           
-          <input id="column-left" type="text" name="first-name" placeholder="Nombres"/>
-          <input id="column-right" type="text" name="last-name" placeholder="Apellidos"/>
-          <input id="input-field" type="text" name="number" placeholder="Numero de Tarjeta"/>
-          <input id="column-left" type="text" name="expiry" placeholder="MM/AA"/>
-          <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
-         
-          <div class="card-wrapper"></div>
-      
-          <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Domicilio"/>
-          <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="Ciudad"/>
-          <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="Codigo Postal"/>
-          <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Correo"/>
-          <input id="input-button" type="submit" value="Enviar"/>
-        
-    </form>
-  </div>
-
-  <script src="../js/Tarjeta.js"></script>
+    <div class="modal">
+        <div class="modal__container">
+          <div class="modal__content">
+            <h2>Informacion de Tarjeta</h2>
+    
+            <form>
+              <ul class="form-list">
+                <li class="form-list__row">
+                  <label>Nombre</label>
+                  <input type="text" name="" required="" />
+                </li>
+                <li class="form-list__row">
+                  <label>Numero de Tarjeta</label>
+                  <div id="input--cc" class="creditcard-icon">
+                    <input type="text" name="cc_number" required="" />
+                  </div>
+                </li>
+                <li class="form-list__row form-list__row--inline">
+                  <div>
+                    <label>Fecha</label>
+                    <div class="form-list__input-inline">
+                      <input type="text" name="cc_month" placeholder="MM"  pattern="\\d*" minlength="2" maxlength="2" required="" />
+                      <input type="text" name="cc_year" placeholder="YY"  pattern="\\d*" minlength="2" maxlength="2" required="" />
+                    </div>
+                  </div>
+                  <div>
+                    <label>
+                      CVC
+                    </label>
+                    <input type="text" name="cc_cvc" placeholder="123" pattern="\\d*" minlength="3" maxlength="4" required="" />
+                  </div>
+                </li>
+                <li class="form-list__row form-list__row--agree">
+                  <label>
+                    <input type="checkbox" name="save_cc" checked="checked">
+                    Guardar tu Tarjeta
+                  </label>
+                </li>
+                <li>
+                  <button type="submit" class="button">Pagar</button>
+                </li>
+              </ul>
+            </form>
+          </div> <!-- END: .modal__content -->
+        </div> <!-- END: .modal__container -->
+      </div> <!-- END: .modal -->
 
 </body>
 </html>
