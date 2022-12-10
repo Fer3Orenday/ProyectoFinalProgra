@@ -33,11 +33,11 @@
                     <a class="nav-link active" aria-current="page" href="AcercaDe.php">Acerca De</a>
                 </li>
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="register.php">Iniciar Sesion</a>
+                    <a class="nav-link active" aria-current="page" href="login.php">Iniciar Sesion</a>
                 </li>
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="login.php">Registrarse</a>
+                    <a class="nav-link active" aria-current="page" href="register.php">Registrarse</a>
                 </li>
             </ul>
     </nav>
