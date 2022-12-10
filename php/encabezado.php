@@ -38,7 +38,7 @@
                 ?>
             
                 <li class="opcionesM2 opcion1">
-                    <a class="nav-link active" aria-current="page" href="#">hola</a>
+                    <a class="nav-link active" aria-current="page" href="../inicio.php">Inicio</a>
 
                 </li>
 

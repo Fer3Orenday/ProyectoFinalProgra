@@ -31,14 +31,14 @@
             <?php 
                     if(empty($_SESSION['usuario'])){
                         echo "<li class='opcionesM2'>
-                        <a class='nav-link active' aria-current='page' href='/php/login.php'>Iniciar Sesion</a></li>";
+                        <a class='nav-link active' aria-current='page' href='php/login.php'>Iniciar Sesion</a></li>";
                     } else {
                         echo "<li class='opcionesM2 style='padding-right:200px;'><p class='nav-link active' aria-current='page' href='#'>Bienvenido ".$_SESSION['usuario']."</p> </li>";
                     }
                 ?>
             
                 <li class="opcionesM2 opcion1">
-                    <a class="nav-link active" aria-current="page" href="#">hola</a>
+                    <a class="nav-link active" aria-current="page" href="inicio.php">Inicio</a>
 
                 </li>
 
@@ -59,7 +59,7 @@
                 if (!empty($_SESSION['usuario'])) {
                   
               ?>
-              <li class="opcionesM2"><a class="nav-link active" href="/php/terminar.php">Cerrar Sesion</a></li>
+              <li class="opcionesM2"><a class="nav-link active" href="php/terminar.php">Cerrar Sesion</a></li>
               <?php
                 }
               ?>

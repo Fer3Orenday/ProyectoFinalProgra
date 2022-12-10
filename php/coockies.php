@@ -8,6 +8,6 @@
         setcookie("name","");
         setcookie("pass","");
         echo "cookies no fijadas <a href='login.php'>volver al login </a>";
-
+        header("../inicio.php");
     }
 ?>
