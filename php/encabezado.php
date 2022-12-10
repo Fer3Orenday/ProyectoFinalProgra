@@ -44,7 +44,7 @@
             <ul class="navbar-nav">
 
                 <li class="opcionesM2 opcion1">
-                    <a class="nav-link active" aria-current="page" href="php/AcercaDe.php">Acerca De</a>
+                    <a class="nav-link active" aria-current="page" href="AcercaDe.php">Acerca De</a>
                 </li>
             <?php 
                     if(empty($_SESSION['usuario'])){
@@ -87,10 +87,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Contáctanos</a>
+                            <a class="nav-link active" aria-current="page" href="ContactoJ.php">Contáctanos</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
+                            <a class="nav-link active" aria-current="page" href="preg-frecuentes.php">Ayuda</a>
                         </li>
 
                     </ul>
