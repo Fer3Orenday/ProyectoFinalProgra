@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,7 +49,7 @@
                 </li>
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="login.php">Iniciar Sesión</a>
+                    <a class="nav-link active" aria-current="page" href="./php/login.php">Iniciar Sesión</a>
                 </li>
             </ul>
     </nav>

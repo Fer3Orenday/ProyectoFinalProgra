@@ -28,6 +28,14 @@
 <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+            <?php 
+                    if(empty($_SESSION['usuario'])){
+                        echo "<li class='opcionesM2'>
+                        <a class='nav-link active' aria-current='page' href='login.php'>Iniciar Sesion</a></li>";
+                    } else {
+                        echo "<li class='opcionesM2 style='padding-right:200px;'><p class='nav-link active' aria-current='page' href='#'>Bienvenido ".$_SESSION['usuario']."</p> </li>";
+                    }
+                ?>
             
                 <li class="opcionesM2 opcion1">
                     <a class="nav-link active" aria-current="page" href="#">hola</a>
@@ -47,13 +55,14 @@
                     <a class="nav-link active" aria-current="page" href="#">-</a>
                 </li>
 
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="login.php"><?php if(isset($_SESSION['usuario'])) echo "Bienvenido ".$_SESSION['usuario']; else echo "Iniciar Sesion"?></a>
-                </li>
-
-                <li class="opcionesM2 opcion1">
-                <a class="nav-link active" aria-current="page" href="#"><?php if(isset($_SESSION['usuario'])) echo "Bienvenido ".$_SESSION['usuario'] ?></a>
-            </li>
+                <?php
+                if (!empty($_SESSION['usuario'])) {
+                  
+              ?>
+              <li class="opcionesM2"><a class="nav-link active" href="./terminar.php">Cerrar Sesion</a></li>
+              <?php
+                }
+              ?>
             </ul>
     </nav>
 
