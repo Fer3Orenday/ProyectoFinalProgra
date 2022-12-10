@@ -17,6 +17,21 @@
     <script src="https://kit.fontawesome.com/25e2610697.js" crossorigin="anonymous"></script>
     <!-- FAVICON  -->
     <link rel="icon" type="image/x-icon" href="../imagenes/favicon.png">
+    <style>
+            scroll-container {
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+            width: 100%;
+            height: 200px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            }
+            scroll-page {
+           
+           
+            }
+    </style>
 </head>
 
 <body>
@@ -86,21 +101,28 @@
                         </li>
 
                     </ul>
-                    <div class="header-section container">
-                    
-                    <div>
-                        <img onmouseover="showCart(this)"  style="width: 100px;" class="cart" src="../imagenes/cart.png" alt="">
-                        <p class="count-product">0</p>
-                    </div>
-                    <div class="cart-products" id="products-id">
-                        <p class="close-btn" onclick="closeBtn()">X</p>
-                        <h3>Mi carrito</h3>
-                        <div class="card-items">
-                            
+                   
+                        <div class="header-section container">
+                        
+                            <div>
+                                <img onmouseover="showCart(this)"  style="width: 100px;" class="cart" src="../imagenes/cart.png" alt="">
+                                <p class="count-product">0</p>
+                            </div>
+                            <div class="cart-products" id="products-id">
+                            <scroll-container>
+                            <scroll-page>
+                                <p class="close-btn" onclick="closeBtn()">X</p>
+                                <h3>Mi carrito</h3>
+                                
+                                        <div class="card-items">
+                                            
+                                        </div>
+                                   
+                                <h2>Total: <strong class="price-total">0</strong> $</h2>
+                                </scroll-page>
+                                </scroll-container>
+                            </div>
                         </div>
-                        <h2>Total: <strong class="price-total">0</strong> $</h2>
-                    </div>
-                </div>
                     
                 </div>
             </div>

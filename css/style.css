@@ -1,6 +1,7 @@
 body{
     font-family: system-ui;
 }
+
 header{
     background-color: #e4e4e8;
     padding-top: 18px;
@@ -11,6 +12,7 @@ header{
     margin-top: -10px;
     z-index: 99;
 }
+
 .container{
     max-width: 1200px;
     text-align: center;
