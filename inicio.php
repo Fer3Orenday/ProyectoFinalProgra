@@ -1,4 +1,5 @@
-<?php session_start();?>
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="./css/estilosImagen.css">
     <link rel="stylesheet" href="./css/estilosPagInicio.css">
     <link rel="stylesheet" href="./css/carusel.css">
+    <link rel="stylesheet" href="./css/estilosSuscribirse.css">
     <!-- link fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
@@ -27,28 +29,53 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     
+
+    <style>
+            scroll-container {
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+            width: 100%;
+            height: 200px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            }
+            scroll-page {
+           
+           
+            }
+    </style>
+
+
+
 </head>
+
 
 <body style="background-color: rgb(253, 253, 246);">
 
-<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
+
+    <!-------------------- ENCABEZADO PARTE1 ----------------->
+
+<!-------------------- ENCABEZADO PARTE1 ----------------->
+
+<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 700px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
 
                 <li class="opcionesM2 opcion1">
-                    <a class="nav-link active" aria-current="page" href="php/AcercaDe.php">Acerca De</a>
+                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"  class="nav-link active" aria-current="page" href="php/AcercaDe.php">Acerca De</a>
                 </li>
             <?php 
                     if(empty($_SESSION['usuario'])){
                         echo "<li class='opcionesM2'>
-                        <a class='nav-link active' aria-current='page' href='php/login.php'>Iniciar Sesion</a></li>";
+                        <a class='nav-link active' aria-current='page' href='login.php'>Iniciar Sesion</a></li>";
                     } else {
                         echo "<li class='opcionesM2 style='padding-right:200px;'><p class='nav-link active' aria-current='page' href='#'>Bienvenido ".$_SESSION['usuario']."</p> </li>";
                     }
                 ?>
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="php/login.php">Registrarse</a>
+                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"class="nav-link active" aria-current="page" href="php/login.php">Registrarse</a>
                 </li>
             </ul>
     </nav>
@@ -67,32 +94,48 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Opcion1</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Opcion1</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Opcion2</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Opcion2</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Opcion3</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Opcion3</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Nosotros</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="php/ContactoJ.php">Contáctanos</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Contáctanos</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Ayuda</a>
                         </li>
 
                     </ul>
-
-                    <form class="d-flex" style="text-align: center; padding-left: 30px;">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-
-                    <a href="https://www.facebook.com/"><i style="color: black; padding-left: 33px;" class="fa-solid fa-cart-shopping fa-3x "></i></a>
+                   
+                        <div class="header-section container">
+                        
+                            <div>
+                                <img onmouseover="showCart(this)"  style="width: 100px;" class="cart" src="../imagenes/cart.png" alt="">
+                                <p class="count-product">0</p>
+                            </div>
+                            <div class="cart-products" id="products-id">
+                            <scroll-container>
+                            <scroll-page>
+                                <p class="close-btn" onclick="closeBtn()">X</p>
+                                <h3>Mi carrito</h3>
+                                
+                                        <div class="card-items">
+                                            
+                                        </div>
+                                   
+                                <h2>Total: <strong class="price-total">0</strong> $</h2>
+                                </scroll-page>
+                                </scroll-container>
+                            </div>
+                        </div>
+                    
                 </div>
             </div>
         </nav>
@@ -104,80 +147,81 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="opcionesM2 opcion2">
-                    <a class="nav-link active" aria-current="page" href="#" style="padding-left: 430px;">¡Nuevos lanzamientos cada dia!</a>
+                    <a style="font-family: 'Concert One', cursive; font-size: 20px;" class="nav-link active" aria-current="page" href="#" style="padding-left: 800px;">¡Nuevos lanzamientos cada dia!</a>
                 </li>
             </ul>
     </nav>
+
 
 </body>
 
 </html>
 
-    <!-- VIDEO DE INICIO  -->
+<!-- VIDEO DE INICIO  -->
 
-    <video width="100%" controls>
-        <source src="./imagenes/video.mp4" type="video/mp4">
+<video width="100%" controls>
+    <source src="./imagenes/video.mp4" type="video/mp4">
 
-        Your browser does not support HTML video.
-    </video>
-
-
-    <table class="table" style="width: 100%; text-align: center;">
-        <thead>
-            <tr>
-
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-
-                <td><img src="./imgsInicio/fondoFut.jpg" alt="" style="width:100% ;" class="img3 "></td>
-
-                <td class="seleccion" style="padding-top: 160px ; background-image: url(./imgsInicio/fondoVerde.webp);">
-                    Apoya a tu seleccion favorita con los mejores tenis!
-
-                    La mejor temporada ya esta aqui.
-                </td>
-            </tr>
+    Your browser does not support HTML video.
+</video>
 
 
-        </tbody>
-    </table>
+<table class="table" style="width: 100%; text-align: center;">
+    <thead>
+        <tr>
 
-    <table class="table" style="width: 100%; text-align: center;">
-        <thead>
-            <tr>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="./imgsInicio/tenis11.jpg" alt="" style="width:100% ;" class="img4"></td>
+            <td><img src="./imgsInicio/fondoFut.jpg" alt="" style="width:100% ;" class="img3 "></td>
 
-                <td>
-                    <img src="./imgsInicio/tenis2.jpg" alt="" style="width:100% ;" class="img4">
-                </td>
+            <td class="seleccion" style="padding-top: 160px ; background-image: url(./imgsInicio/fondoVerde.webp);">
+                Apoya a tu seleccion favorita con los mejores tenis!
 
-                <td><img src="./imgsInicio/tenis5.webp" alt="" style="width:100% ;" class="img4"></td>
-
-                <td><img src="./imgsInicio/tenis4.jpg" alt="" style="width:100% ;" class="img4"></td>
-            </tr>
+                La mejor temporada ya esta aqui.
+            </td>
+        </tr>
 
 
-        </tbody>
-    </table>
+    </tbody>
+</table>
+
+<table class="table" style="width: 100%; text-align: center;">
+    <thead>
+        <tr>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="./imgsInicio/tenis11.jpg" alt="" style="width:100% ;" class="img4"></td>
+
+            <td>
+                <img src="./imgsInicio/tenis2.jpg" alt="" style="width:100% ;" class="img4">
+            </td>
+
+            <td><img src="./imgsInicio/tenis5.webp" alt="" style="width:100% ;" class="img4"></td>
+
+            <td><img src="./imgsInicio/tenis4.jpg" alt="" style="width:100% ;" class="img4"></td>
+        </tr>
 
 
-    <div style="background-image: url('./imgsInicio/fondoNavidad.jpg');">
-        <h1 class="fondNavidad">
-            <br>
-            Para esta navidad
-            <br>
-            Regala Drokey
+    </tbody>
+</table>
 
-            <br>
-            <a class="btn btn-primary" href="./php/tienda.php" role="button" style="background-color: blue;">Comprar</a>
-            <br>
+
+<div style="background-image: url('./imgsInicio/fondoNavidad.jpg');">
+    <h1 class="fondNavidad">
+        <br>
+        Para esta navidad
+        <br>
+        Regala Drokey
+
+        <br>
+        <a class="btn btn-primary" href="./php/tienda.php" role="button" style="background-color: blue;">Comprar</a>
+        <br>
             <p>
   <a class="btn btn-primary" data-toggle="collapse" href="./imagenes/1.png" role="button" aria-expanded="false" aria-controls="collapseExample">
     Obtener codigo de cupon
@@ -190,77 +234,88 @@
   </div>
 </div>
 
-        </h1>
-    </div>
+    </h1>
+</div>
+<br>
+
+<div>
+    <h3 style="font-family: 'Concert One', cursive;">¿Para quién compras?</h3>
+</div>
+
+
+<table style="width: 100%; text-align: center;">
+    <tbody>
+        <tr>
+            <td style="background-image: url('./imgsInicio/rosa.webp');"><img src="./imgsInicio/mujer.jpg" alt="" style="width:70% ;"></td>
+
+            <td style="background-image: url('./imgsInicio/azul.jpg');">
+                <img src="./imgsInicio/hombre.jpg" alt="" style="width:70% ;">
+            </td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <td><a class="btn btn-primary" href="#" role="button">Mujer</a></td>
+            <td><a class="btn btn-primary" href="#" role="button">Hombre</a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+
+<div style="background-image: url('./imgsInicio/fondoSus.jpg');">
+    <h2 class="fondNavidad">
+        !Se parte de nuestro club!
+    </h2>
+    <section class="widget widget_blog_subscription option-b">
+        <form action="suscribirsemail.php" method="post" accept-charset="utf-8" id="subscribe-blog">
+            <p>Subscribete y Ten Felices Fiestas</p>
+            <p>
+                <input type="text" name="email" style="width: 95%; padding: 1px 2px" placeholder="Ingresa tu Correo" value="" id="subscribe-field">
+            </p>
+            <p>
+                <input type="submit" value="Suscribirse">
+            </p>
+
+        </form>
+        <br>
+        <br>
+    </section>
     <br>
+</div>
 
-    <div>
-        <h3 style="font-family: 'Concert One', cursive;">¿Para quién compras?</h3>
-    </div>
-
-
-    <br>
-
-    <table  style="width: 100%; text-align: center;">
-        <thead>
-            <tr>
-
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="./imgsInicio/mujer.jpg" alt="" style="width:100% ;" ></td>
-
-                <td>
-                    <img src="./imgsInicio/hombre.jpg" alt="" style="width:100% ;" >
-                </td>
-
-                <td><img src="./imgsInicio/niños.jpg" alt="" style="width:100% ;" ></td>
-
-            </tr>
-
-            <tr>
-                <td>MUJER</td>
-                <td>HOMBRE</td>
-                <td>NIÑOS</td>
-            </tr>
-
-
-        </tbody>
-    </table>
-
-    <br>
-    <br>
+<br>
+<br>
 
 
 
 
 
-    <!-- 3 IMAGENES  -->
-    <div class="card-group">
-        <div class="card">
-            <img src="./imagenes/img1.jpg" class="card-img-top imagen2 img4" alt="...">
-            <div class="card-body">
-                <p class="card-text imgss">Seguridad en cada paso</p>
+<!-- 3 IMAGENES  -->
+<div class="card-group">
+    <div class="card">
+        <img src="./imagenes/img1.jpg" class="card-img-top imagen2 img4" alt="...">
+        <div class="card-body">
+            <p class="card-text imgss">Seguridad en cada paso</p>
 
-            </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/img2.webp" class="card-img-top imagen2 img4" alt="...">
-            <div class="card-body">
-                <p class="card-text imgss">Todo para mejorar tu rendimiento.</p>
-
-            </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/img3.jpg" class="card-img-top imagen2 img4" alt="...">
-            <div class="card-body">
-                <p class="card-text imgss">Los tenis del momento</p>
-
-            </div>
         </div>
     </div>
-    <br>
+    <div class="card">
+        <img src="./imagenes/img2.webp" class="card-img-top imagen2 img4" alt="...">
+        <div class="card-body">
+            <p class="card-text imgss">Todo para mejorar tu rendimiento.</p>
+
+        </div>
+    </div>
+    <div class="card">
+        <img src="./imagenes/img3.jpg" class="card-img-top imagen2 img4" alt="...">
+        <div class="card-body">
+            <p class="card-text imgss">Los tenis del momento</p>
+
+        </div>
+    </div>
+</div>
+<br>
 
 <!--Carrusel-->
 
@@ -273,7 +328,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./imagenes/a1.jpeg" class="d-block w-100" alt="...">
+                    <img src="./imagenes/a1.jpeg" class="d-block w-100" alt="..." width=50%;>
                 </div>
                 <div class="carousel-item">
                     <img src="./imagenes/a2.jpeg" class="d-block w-100" alt="...">
@@ -298,116 +353,14 @@
 <br>
 
 
-    <!-- PIE DE PAGINA -->
+<!-- PIE DE PAGINA -->
 
-    <div>
-        <!-- Footer -->
-        <footer class="text-center text-lg-start text-black" style="background-color:  rgb(171, 171, 218)">
-            <!-- Grid container -->
-            <div class="container p-4 pb-0">
-                <!-- Section: Links -->
-                <section class="">
-                    <!--Grid row-->
-                    <div class="row">
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">
-                                Drokey
-                            </h6>
-                            <p>
-                                Siendo la mejor compañia de tienda deportiva desde 2014, brindamos
-                                la mejor calidad en nuestros productos. Siempre acompañandote a donde
-                                vayas.
-                            </p>
-                        </div>
-                        <!-- Grid column -->
+<?php
+include './php/pieDepagina.php';
 
-                        <hr class="w-100 clearfix d-md-none" />
+?>
 
-                        <!-- Grid column -->
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Sucursales</h6>
-                            <p>
-                                <a class="text-black">España</a>
-                            </p>
-                            <p>
-                                <a class="text-black">México</a>
-                            </p>
-                            <p>
-                                <a class="text-black">Argentina</a>
-                            </p>
-                            <p>
-                                <a class="text-black">Dubai</a>
-                            </p>
-                        </div>
-
-                        <p>
-                                <a class="text-black">Descuento gratis</a>
-                            </p>
-                        <!-- Grid column -->
-
-                        <hr class="w-100 clearfix d-md-none" />
-
-                        <!-- Grid column -->
-                        <hr class="w-100 clearfix d-md-none" />
-
-                        <!-- Grid column -->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
-                            <p><i class="fas fa-home mr-3"></i> Aguascalientes, Mexico CP 20298</p>
-                            <p><i class="fas fa-envelope mr-3"></i> drokey@gmail.com</p>
-                            <p><i class="fas fa-phone mr-3"></i> + 52 449 98 78 65</p>
-                            <p><i class="fas fa-print mr-3"></i> + 52 449 763 65 24</p>
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Siguenos</h6>
-
-                            <!-- Facebook -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-
-                            <!-- Twitter -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-
-                            <!-- Google -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
-
-                            <!-- Instagram -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://instagram.com/drokey_sport?igshid=ZDdkNTZiNTM=" role="button"><i class="fab fa-instagram"></i></a>
-
-                            <!-- Linkedin -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-                            <!-- Github -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-                </section>
-                <!-- Section: Links -->
-            </div>
-            <!-- Grid container -->
-
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2022 Company:
-                <a class="text-white" href="https://mdbootstrap.com/">Drokey</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
-    </div>
-    <!-- End of .container -->
-
-
-
-
-
-
-
-
-
+<!-- End of .container -->
 </body>
 
 </html>
