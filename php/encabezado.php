@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,8 +43,17 @@
 <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+            <?php 
+                    if(empty($_SESSION['usuario'])){
+                        echo "<li class='opcionesM2'>
+                        <a class='nav-link active' aria-current='page' href='login.php'>Iniciar Sesion</a></li>";
+                    } else {
+                        echo "<li class='opcionesM2 style='padding-right:200px;'><p class='nav-link active' aria-current='page' href='#'>Bienvenido ".$_SESSION['usuario']."</p> </li>";
+                    }
+                ?>
+            
                 <li class="opcionesM2 opcion1">
-                    <a class="nav-link active" aria-current="page" href="#">hola</a>
+                    <a class="nav-link active" aria-current="page" href="../inicio.php">Inicio</a>
 
                 </li>
 
@@ -62,9 +70,14 @@
                     <a class="nav-link active" aria-current="page" href="#">-</a>
                 </li>
 
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">Iniciar Sesión</a>
-                </li>
+                <?php
+                if (!empty($_SESSION['usuario'])) {
+                  
+              ?>
+              <li class="opcionesM2"><a class="nav-link active" href="./terminar.php">Cerrar Sesion</a></li>
+              <?php
+                }
+              ?>
             </ul>
     </nav>
 
