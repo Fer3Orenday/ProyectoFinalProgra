@@ -75,9 +75,9 @@
 
 </head>
 <body style="background-color: rgb(217, 217, 235);">
-    <header class="arriba">
+    <div class="aba">
         <h1>REGISTRO DE PRODUCTOS</h1>
-    </header>
+</div>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  method="post">
     <button type="submit" name="agrega" class="btn btn-success">+ (AGREGAR)</button>
     </form>
