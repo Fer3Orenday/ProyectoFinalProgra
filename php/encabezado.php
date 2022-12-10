@@ -104,7 +104,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="opcionesM2 opcion2">
-                    <a class="nav-link active" aria-current="page" href="#">¡Nuevos lanzamientos cada dia!</a>
+                    <a class="nav-link active" aria-current="page" href="#" style="padding-left: 430px;">¡Nuevos lanzamientos cada dia!</a>
                 </li>
             </ul>
     </nav>
