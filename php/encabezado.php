@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-
+    <link rel="stylesheet" href="../css/style.css">
     <!-- LINK bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <!-- link estilos -->
@@ -17,6 +16,21 @@
     <script src="https://kit.fontawesome.com/25e2610697.js" crossorigin="anonymous"></script>
     <!-- FAVICON  -->
     <link rel="icon" type="image/x-icon" href="../imagenes/favicon.png">
+    <style>
+            scroll-container {
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+            width: 100%;
+            height: 200px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            }
+            scroll-page {
+           
+           
+            }
+    </style>
 </head>
 
 <body>
@@ -29,8 +43,17 @@
 <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+            <?php 
+                    if(empty($_SESSION['usuario'])){
+                        echo "<li class='opcionesM2'>
+                        <a class='nav-link active' aria-current='page' href='login.php'>Iniciar Sesion</a></li>";
+                    } else {
+                        echo "<li class='opcionesM2 style='padding-right:200px;'><p class='nav-link active' aria-current='page' href='#'>Bienvenido ".$_SESSION['usuario']."</p> </li>";
+                    }
+                ?>
+            
                 <li class="opcionesM2 opcion1">
-                    <a class="nav-link active" aria-current="page" href="#">hola</a>
+                    <a class="nav-link active" aria-current="page" href="../inicio.php">Inicio</a>
 
                 </li>
 
@@ -47,9 +70,14 @@
                     <a class="nav-link active" aria-current="page" href="#">-</a>
                 </li>
 
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">Iniciar Sesión</a>
-                </li>
+                <?php
+                if (!empty($_SESSION['usuario'])) {
+                  
+              ?>
+              <li class="opcionesM2"><a class="nav-link active" href="./terminar.php">Cerrar Sesion</a></li>
+              <?php
+                }
+              ?>
             </ul>
     </nav>
 
@@ -86,13 +114,29 @@
                         </li>
 
                     </ul>
-
-                    <form class="d-flex" style="text-align: center; padding-left: 30px;">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-
-                    <a href="https://www.facebook.com/"><i style="color: black; padding-left: 33px;" class="fa-solid fa-cart-shopping fa-3x "></i></a>
+                   
+                        <div class="header-section container">
+                        
+                            <div>
+                                <img onmouseover="showCart(this)"  style="width: 100px;" class="cart" src="../imagenes/cart.png" alt="">
+                                <p class="count-product">0</p>
+                            </div>
+                            <div class="cart-products" id="products-id">
+                            <scroll-container>
+                            <scroll-page>
+                                <p class="close-btn" onclick="closeBtn()">X</p>
+                                <h3>Mi carrito</h3>
+                                
+                                        <div class="card-items">
+                                            
+                                        </div>
+                                   
+                                <h2>Total: <strong class="price-total">0</strong> $</h2>
+                                </scroll-page>
+                                </scroll-container>
+                            </div>
+                        </div>
+                    
                 </div>
             </div>
         </nav>

@@ -75,7 +75,7 @@ include('encabezado.php');
                 </div>
             </div>
         </div>
-        <div class="wrapper" style="">
+        <div class="wrapper" >
             <div class="captcha-area">
                 <div class="captcha-img">
                     <img src="../imagenes/captcha-bg.gif" alt="Captch Background">
