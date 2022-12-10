@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/estilosEncabezado.css">
     <link rel="stylesheet" href="./css/estilosImagen.css">
     <link rel="stylesheet" href="./css/estilosPagInicio.css">
+    <link rel="stylesheet" href="./css/estilosSuscribirse.css">
     <!-- link fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
@@ -25,18 +26,18 @@
 
 <body style="background-color: rgb(253, 253, 246);">
 
-<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
+    <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-            <?php 
-                    if(empty($_SESSION['usuario'])){
-                        echo "<li class='opcionesM2'>
+                <?php
+                if (empty($_SESSION['usuario'])) {
+                    echo "<li class='opcionesM2'>
                         <a class='nav-link active' aria-current='page' href='php/login.php'>Iniciar Sesion</a></li>";
-                    } else {
-                        echo "<li class='opcionesM2 style='padding-right:200px;'><p class='nav-link active' aria-current='page' href='#'>Bienvenido ".$_SESSION['usuario']."</p> </li>";
-                    }
+                } else {
+                    echo "<li class='opcionesM2 style='padding-right:200px;'><p class='nav-link active' aria-current='page' href='#'>Bienvenido " . $_SESSION['usuario'] . "</p> </li>";
+                }
                 ?>
-            
+
                 <li class="opcionesM2 opcion1">
                     <a class="nav-link active" aria-current="page" href="php/AcercaDe.php">Acerca De</a>
                 </li>
@@ -110,243 +111,255 @@
 
 </html>
 
-    <!-- VIDEO DE INICIO  -->
+<!-- VIDEO DE INICIO  -->
 
-    <video width="100%" controls>
-        <source src="./imagenes/video.mp4" type="video/mp4">
+<video width="100%" controls>
+    <source src="./imagenes/video.mp4" type="video/mp4">
 
-        Your browser does not support HTML video.
-    </video>
-
-
-    <table class="table" style="width: 100%; text-align: center;">
-        <thead>
-            <tr>
-
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-
-                <td><img src="./imgsInicio/fondoFut.jpg" alt="" style="width:100% ;" class="img3 "></td>
-
-                <td class="seleccion" style="padding-top: 160px ; background-image: url(./imgsInicio/fondoVerde.webp);">
-                    Apoya a tu seleccion favorita con los mejores tenis!
-
-                    La mejor temporada ya esta aqui.
-                </td>
-            </tr>
+    Your browser does not support HTML video.
+</video>
 
 
-        </tbody>
-    </table>
+<table class="table" style="width: 100%; text-align: center;">
+    <thead>
+        <tr>
 
-    <table class="table" style="width: 100%; text-align: center;">
-        <thead>
-            <tr>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="./imgsInicio/tenis11.jpg" alt="" style="width:100% ;" class="img4"></td>
+            <td><img src="./imgsInicio/fondoFut.jpg" alt="" style="width:100% ;" class="img3 "></td>
 
-                <td>
-                    <img src="./imgsInicio/tenis2.jpg" alt="" style="width:100% ;" class="img4">
-                </td>
+            <td class="seleccion" style="padding-top: 160px ; background-image: url(./imgsInicio/fondoVerde.webp);">
+                Apoya a tu seleccion favorita con los mejores tenis!
 
-                <td><img src="./imgsInicio/tenis5.webp" alt="" style="width:100% ;" class="img4"></td>
-
-                <td><img src="./imgsInicio/tenis4.jpg" alt="" style="width:100% ;" class="img4"></td>
-            </tr>
+                La mejor temporada ya esta aqui.
+            </td>
+        </tr>
 
 
-        </tbody>
-    </table>
+    </tbody>
+</table>
+
+<table class="table" style="width: 100%; text-align: center;">
+    <thead>
+        <tr>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="./imgsInicio/tenis11.jpg" alt="" style="width:100% ;" class="img4"></td>
+
+            <td>
+                <img src="./imgsInicio/tenis2.jpg" alt="" style="width:100% ;" class="img4">
+            </td>
+
+            <td><img src="./imgsInicio/tenis5.webp" alt="" style="width:100% ;" class="img4"></td>
+
+            <td><img src="./imgsInicio/tenis4.jpg" alt="" style="width:100% ;" class="img4"></td>
+        </tr>
 
 
-    <div style="background-image: url('./imgsInicio/fondoNavidad.jpg');">
-        <h1 class="fondNavidad">
-            <br>
-            Para esta navidad
-            <br>
-            Regala Drokey
+    </tbody>
+</table>
 
-            <br>
-            <a class="btn btn-primary" href="./php/tienda.php" role="button" style="background-color: blue;">Comprar</a>
-            <br>
 
-        </h1>
-    </div>
+<div style="background-image: url('./imgsInicio/fondoNavidad.jpg');">
+    <h1 class="fondNavidad">
+        <br>
+        Para esta navidad
+        <br>
+        Regala Drokey
+
+        <br>
+        <a class="btn btn-primary" href="./php/tienda.php" role="button" style="background-color: blue;">Comprar</a>
+        <br>
+
+    </h1>
+</div>
+<br>
+
+<div>
+    <h3 style="font-family: 'Concert One', cursive;">¿Para quién compras?</h3>
+</div>
+
+
+<table style="width: 100%; text-align: center;">
+    <tbody>
+        <tr>
+            <td style="background-image: url('./imgsInicio/rosa.webp');"><img src="./imgsInicio/mujer.jpg" alt="" style="width:70% ;"></td>
+
+            <td style="background-image: url('./imgsInicio/azul.jpg');">
+                <img src="./imgsInicio/hombre.jpg" alt="" style="width:70% ;">
+            </td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <td><a class="btn btn-primary" href="#" role="button">Mujer</a></td>
+            <td><a class="btn btn-primary" href="#" role="button">Hombre</a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+
+<div style="background-image: url('./imgsInicio/fondoSus.jpg');">
+    <h2 class="fondNavidad">
+        !Se parte de nuestro club!
+    </h2>
+    <section class="widget widget_blog_subscription option-b">
+        <form action="suscribirsemail.php" method="post" accept-charset="utf-8" id="subscribe-blog">
+            <p>Subscribete y Ten Felices Fiestas</p>
+            <p>
+                <input type="text" name="email" style="width: 95%; padding: 1px 2px" placeholder="Ingresa tu Correo" value="" id="subscribe-field">
+            </p>
+            <p>
+                <input type="submit" value="Suscribirse">
+            </p>
+
+        </form>
+        <br>
+        <br>
+    </section>
     <br>
+</div>
 
-    <div>
-        <h3 style="font-family: 'Concert One', cursive;">¿Para quién compras?</h3>
-    </div>
-
-
-    <table  style="width: 100%; text-align: center;">
-
-
-        
-        <tbody>
-            <tr>
-                <td style="background-image: url('./imgsInicio/rosa.webp');"><img src="./imgsInicio/mujer.jpg" alt="" style="width:70% ;" ></td>
-
-                <td style="background-image: url('./imgsInicio/azul.jpg');">
-                    <img src="./imgsInicio/hombre.jpg" alt="" style="width:70% ;" >
-                </td>
-
-       
-
-            </tr>
-
-            <br>
-            <br>
-            <tr>
-                <td><a class="btn btn-primary" href="#" role="button">Mujer</a></td>
-                <td><a class="btn btn-primary" href="#" role="button">Hombre</a></td>
-              
-
-            </tr>
-
-
-        </tbody>
-    </table>
-
-    <br>
-    <br>
+<br>
+<br>
 
 
 
 
 
-    <!-- 3 IMAGENES  -->
-    <div class="card-group">
-        <div class="card">
-            <img src="./imagenes/img1.jpg" class="card-img-top imagen2 img4" alt="...">
-            <div class="card-body">
-                <p class="card-text imgss">Seguridad en cada paso</p>
+<!-- 3 IMAGENES  -->
+<div class="card-group">
+    <div class="card">
+        <img src="./imagenes/img1.jpg" class="card-img-top imagen2 img4" alt="...">
+        <div class="card-body">
+            <p class="card-text imgss">Seguridad en cada paso</p>
 
-            </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/img2.webp" class="card-img-top imagen2 img4" alt="...">
-            <div class="card-body">
-                <p class="card-text imgss">Todo para mejorar tu rendimiento.</p>
-
-            </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/img3.jpg" class="card-img-top imagen2 img4" alt="...">
-            <div class="card-body">
-                <p class="card-text imgss">Los tenis del momento</p>
-
-            </div>
         </div>
     </div>
-    <br>
+    <div class="card">
+        <img src="./imagenes/img2.webp" class="card-img-top imagen2 img4" alt="...">
+        <div class="card-body">
+            <p class="card-text imgss">Todo para mejorar tu rendimiento.</p>
+
+        </div>
+    </div>
+    <div class="card">
+        <img src="./imagenes/img3.jpg" class="card-img-top imagen2 img4" alt="...">
+        <div class="card-body">
+            <p class="card-text imgss">Los tenis del momento</p>
+
+        </div>
+    </div>
+</div>
+<br>
 
 
 
 
-    <!-- PIE DE PAGINA -->
+<!-- PIE DE PAGINA -->
 
-    <div >
-        <!-- Footer -->
-        <footer class="text-center text-lg-start text-black" style="background-color: rgb(171, 171, 218)">
-            <!-- Grid container -->
-            <div class="container p-4 pb-0">
-                <!-- Section: Links -->
-                <section class="">
-                    <!--Grid row-->
-                    <div class="row">
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">
-                                Drokey
-                            </h6>
-                            <p>
-                                Siendo la mejor compañia de tienda deportiva desde 2014, brindamos 
-                                la mejor calidad en nuestros productos. Siempre acompañandote a donde
-                                vayas. 
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-
-                        <hr class="w-100 clearfix d-md-none" />
-
-                        <!-- Grid column -->
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Sucursales</h6>
-                            <p>
-                                <a class="text-black">España</a>
-                            </p>
-                            <p>
-                                <a class="text-black">México</a>
-                            </p>
-                            <p>
-                                <a class="text-black">Argentina</a>
-                            </p>
-                            <p>
-                                <a class="text-black">Dubai</a>
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-
-                        <hr class="w-100 clearfix d-md-none" />
-
-                        <!-- Grid column -->
-                        <hr class="w-100 clearfix d-md-none" />
-
-                        <!-- Grid column -->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
-                            <p><i class="fas fa-home mr-3"></i> Aguascalientes, Mexico CP 20298</p>
-                            <p><i class="fas fa-envelope mr-3"></i> drokey@gmail.com</p>
-                            <p><i class="fas fa-phone mr-3"></i> + 52 449 98 78 65</p>
-                            <p><i class="fas fa-print mr-3"></i> + 52 449 763 65 24</p>
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Siguenos</h6>
-
-                            <!-- Facebook -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-
-                            <!-- Twitter -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-
-                            <!-- Google -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
-
-                            <!-- Instagram -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://instagram.com/drokey_sport?igshid=ZDdkNTZiNTM=" role="button"><i class="fab fa-instagram"></i></a>
-
-                            <!-- Linkedin -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://instagram.com/drokey_sport?igshid=ZDdkNTZiNTM=" role="button"><i class="fab fa-linkedin-in"></i></a>
-                            <!-- Github -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
-                        </div>
+<div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-black" style="background-color: rgb(171, 171, 218)">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            Drokey
+                        </h6>
+                        <p>
+                            Siendo la mejor compañia de tienda deportiva desde 2014, brindamos
+                            la mejor calidad en nuestros productos. Siempre acompañandote a donde
+                            vayas.
+                        </p>
                     </div>
-                    <!--Grid row-->
-                </section>
-                <!-- Section: Links -->
-            </div>
-            <!-- Grid container -->
+                    <!-- Grid column -->
 
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2022 Company:
-                <a class="text-white" href="https://mdbootstrap.com/">Drokey</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
-    </div>
-    <!-- End of .container -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Sucursales</h6>
+                        <p>
+                            <a class="text-black">España</a>
+                        </p>
+                        <p>
+                            <a class="text-black">México</a>
+                        </p>
+                        <p>
+                            <a class="text-black">Argentina</a>
+                        </p>
+                        <p>
+                            <a class="text-black">Dubai</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                        <p><i class="fas fa-home mr-3"></i> Aguascalientes, Mexico CP 20298</p>
+                        <p><i class="fas fa-envelope mr-3"></i> drokey@gmail.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> + 52 449 98 78 65</p>
+                        <p><i class="fas fa-print mr-3"></i> + 52 449 763 65 24</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Siguenos</h6>
+
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+                        <!-- Google -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://instagram.com/drokey_sport?igshid=ZDdkNTZiNTM=" role="button"><i class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://instagram.com/drokey_sport?igshid=ZDdkNTZiNTM=" role="button"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- Github -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2022 Company:
+            <a class="text-white" href="https://mdbootstrap.com/">Drokey</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</div>
+<!-- End of .container -->
 
 
 
