@@ -86,13 +86,22 @@
                         </li>
 
                     </ul>
-
-                    <form class="d-flex" style="text-align: center; padding-left: 30px;">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-
-                    <a href="https://www.facebook.com/"><i style="color: black; padding-left: 33px;" class="fa-solid fa-cart-shopping fa-3x "></i></a>
+                    <div class="header-section container">
+                    <img class="logo" src="../imagenes/logoShop.png" alt="">
+                    <div>
+                        <img onmouseover="showCart(this)" class="cart" src="../imagenes/cart.png" alt="">
+                        <p class="count-product">0</p>
+                    </div>
+                    <div class="cart-products" id="products-id">
+                        <p class="close-btn" onclick="closeBtn()">X</p>
+                        <h3>Mi carrito</h3>
+                        <div class="card-items">
+                            
+                        </div>
+                        <h2>Total: <strong class="price-total">0</strong> $</h2>
+                    </div>
+                </div>
+                    
                 </div>
             </div>
         </nav>
