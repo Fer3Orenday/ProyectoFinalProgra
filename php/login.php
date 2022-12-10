@@ -21,14 +21,15 @@ $_SESSION['intentosLogin'] = 0;
         <div class="collapse navbar-collapse" id="navbarNav" style="display: flex; flex-direction: row; justify-content: flex-end;">
             <ul class="navbar-nav">
                 <li class="opcionesM2 opcion1">
-                    <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
+                    <a class="nav-link active" aria-current="page" href="acercaDe.php">Acerca de</a>
                 </li>
                 <li class="opcionesM2">
                     <a class="nav-link active" aria-current="page" href="register.php">Registrarse</a>
                 </li>
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">Iniciar Sesion</a>
+                    <a class="nav-link active" aria-current="page" href="../inicio.php">Pagina Principal
+                    </a>
                 </li>
             </ul>
     </nav>
