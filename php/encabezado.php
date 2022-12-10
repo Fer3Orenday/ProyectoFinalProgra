@@ -39,10 +39,13 @@
 
 <!-------------------- ENCABEZADO PARTE1 ----------------->
 
-
 <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+
+                <li class="opcionesM2 opcion1">
+                    <a class="nav-link active" aria-current="page" href="php/AcercaDe.php">Acerca De</a>
+                </li>
             <?php 
                     if(empty($_SESSION['usuario'])){
                         echo "<li class='opcionesM2'>
@@ -51,16 +54,9 @@
                         echo "<li class='opcionesM2 style='padding-right:200px;'><p class='nav-link active' aria-current='page' href='#'>Bienvenido ".$_SESSION['usuario']."</p> </li>";
                     }
                 ?>
-            
-                <li class="opcionesM2 opcion1">
-                    <a class="nav-link active" aria-current="page" href="AcercaDe.php">Acerca De</a>
-                </li>
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="login.php">Iniciar Sesion</a>
-                </li>
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="register.php">Registrarse</a>
+                    <a class="nav-link active" aria-current="page" href="php/login.php">Registrarse</a>
                 </li>
             </ul>
     </nav>
