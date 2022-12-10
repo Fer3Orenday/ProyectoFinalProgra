@@ -1,0 +1,43 @@
+.miclase{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+ 
+ }
+
+#carrusel {
+    width: 50%;
+      margin: 0 auto;
+      padding: 20px;
+}
+  
+.input-wrapper {
+     position: relative;
+     width: 271px;
+   }
+   
+   .input {
+     box-sizing: border-box;
+     color: #191919;
+     padding: 15px 15px 15px 35px;
+     width: 100%;
+   }
+   
+   .input.password {
+     padding: 15px 35px 15px 15px;
+   }
+   
+   .input-icon {
+     color: #191919;
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     left: 12px;
+     top: 50%;
+     transform: translateY(-50%);
+   }
+   
+   .input-icon.password {
+     left: unset;
+     right: 12px;
+   }    

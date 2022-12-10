@@ -44,10 +44,13 @@ include_once("conexion.php");
 
 <!-------------------- ENCABEZADO PARTE1 ----------------->
 
-
-<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
+<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 700px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+
+                <li class="opcionesM2 opcion1">
+                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"  class="nav-link active" aria-current="page" href="php/AcercaDe.php">Acerca De</a>
+                </li>
             <?php 
                     if(empty($_SESSION['usuario'])){
                         echo "<li class='opcionesM2'>
@@ -56,33 +59,10 @@ include_once("conexion.php");
                         echo "<li class='opcionesM2 style='padding-right:200px;'><p class='nav-link active' aria-current='page' href='#'>Bienvenido ".$_SESSION['usuario']."</p> </li>";
                     }
                 ?>
-            
-                <li class="opcionesM2 opcion1">
-                    <a class="nav-link active" aria-current="page" href="../inicio.php">Inicio</a>
-
-                </li>
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">-</a>
+                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"class="nav-link active" aria-current="page" href="php/login.php">Registrarse</a>
                 </li>
-
-
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="acercaDe.php">Acerca de</a>
-                </li>
-
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">-</a>
-                </li>
-
-                <?php
-                if (!empty($_SESSION['usuario'])) {
-                  
-              ?>
-              <li class="opcionesM2"><a class="nav-link active" href="./terminar.php">Cerrar Sesion</a></li>
-              <?php
-                }
-              ?>
             </ul>
     </nav>
 
@@ -100,22 +80,22 @@ include_once("conexion.php");
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Opcion1</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Opcion1</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Opcion2</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Opcion2</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Opcion3</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Opcion3</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Nosotros</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Contáctanos</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Contáctanos</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Ayuda</a>
                         </li>
 
                     </ul>
@@ -123,7 +103,7 @@ include_once("conexion.php");
                         <div class="header-section container">
                         
                             <div>
-                                <img onmouseover="showCart(this)"  style="width: 100px;" class="cart" src="../imagenes/cart.png" alt="">
+                                <img onmouseover="showCart(this)"  style="width: 100px;" class="cart" src="../imagenes/card.png" alt="">
                                 <p class="count-product">0</p>
                             </div>
                             <div class="cart-products" id="products-id">
@@ -178,7 +158,7 @@ include_once("conexion.php");
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="opcionesM2 opcion2">
-                    <a class="nav-link active" aria-current="page" href="#" style="padding-left: 430px;">¡Nuevos lanzamientos cada dia!</a>
+                    <a style="font-family: 'Concert One', cursive; font-size: 20px;" class="nav-link active" aria-current="page" href="#" style="padding-left: 800px;">¡Nuevos lanzamientos cada dia!</a>
                 </li>
             </ul>
     </nav>

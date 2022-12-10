@@ -1,7 +1,7 @@
 <?php
 
 $_SESSION['intentosLogin'] = 0;
-include('encabezado.php');
+// include('encabezado.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +16,23 @@ include('encabezado.php');
         <link rel="stylesheet" href="../css/style.css">
     <title>Login</title>
 </head>
+
+<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
+        <div class="collapse navbar-collapse" id="navbarNav" style="display: flex; flex-direction: row; justify-content: flex-end;">
+            <ul class="navbar-nav">
+                <li class="opcionesM2 opcion1">
+                    <a class="nav-link active" aria-current="page" href="acercaDe.php">Acerca de</a>
+                </li>
+                <li class="opcionesM2">
+                    <a class="nav-link active" aria-current="page" href="register.php">Registrarse</a>
+                </li>
+
+                <li class="opcionesM2">
+                    <a class="nav-link active" aria-current="page" href="../inicio.php">Pagina Principal
+                    </a>
+                </li>
+            </ul>
+    </nav>
 
 <body>
     <section class="vh-100">
@@ -63,9 +80,9 @@ include('encabezado.php');
                                     disabled>Ingresar</button>
                             </div>
                             <br>
-                            <p class="small fw-bold mt-2 pt-1 mb-0">No tienes cuenta? <a href="register.php"
+                            <!-- <p class="small fw-bold mt-2 pt-1 mb-0">No tienes cuenta? <a href="register.php"
                                     class="link-danger">Registrate</a></p>
-                            <br>
+                            <br> -->
                             <p class="small fw-bold mt-2 pt-1 mb-0">Olvido su contraseña <a href="cambiarcontra.php"
                                     class="link-prymary">Recuperar</a></p>
                             <p class="small fw-bold mt-2 pt-1 mb-0">Change pass <a href="resetpass.php"
@@ -100,10 +117,10 @@ include('encabezado.php');
         </div>
 
     </section>
+        <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="../js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="../js/app2.js"></script>
     <?php

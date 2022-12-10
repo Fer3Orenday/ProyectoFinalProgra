@@ -1,5 +1,5 @@
 <?php
-$servidor = 'localhost';
+$servidor = 'localhost:3306';
 $cuenta = 'root';
 $password = '';
 $bd = 'tienda';
