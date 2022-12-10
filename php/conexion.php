@@ -3,7 +3,7 @@
  $servidor='localhost:33065';
  $cuenta='root';
  $password='';
- $bd='usuario';
+ $bd='tienda';
   
  //conexion a la base de datos
  $conexion = new mysqli($servidor,$cuenta,$password,$bd);
