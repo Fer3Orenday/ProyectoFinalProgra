@@ -23,7 +23,7 @@
     <!-------------------- ENCABEZADO PARTE1 ----------------->
 
 
-    <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 500px; ">
+    <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="opcionesM2 opcion1">

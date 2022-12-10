@@ -101,8 +101,8 @@
     <nav class="navbar navbar-expand " class="encabezado" style="background-color:rgb(217, 217, 235); position: sticky;">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="opcionesM2 opcion2">
-                    <a class="nav-link active" aria-current="page" href="#">¡Nuevos lanzamientos cada dia!</a>
+                <li class="opcionesM2 " style="padding-left: 523px;">
+                    <a class="nav-link active" aria-current="page" href="#" >¡Nuevos lanzamientos cada dia!</a>
                 </li>
             </ul>
     </nav>
@@ -126,7 +126,7 @@
             <tr>
 
                 <td><img src="../imgsAcercaDe/img3.jpg" alt="" style="width:100% ;" class="img3"></td>
-                <td class="textoss tex22" style="padding-top: 160px ;">Visión
+                <td class="textoss tex22" style="padding-top: 160px ; background-image: url(../imgsAcercaDe/img8.webp);">Visión
                     <br>
                     “Ser la mejor empresa nacional e internacional destacándonos por la buena calidad,
                     servicio y comodidad a nuestros clientes.
@@ -134,7 +134,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="textoss fondoo" style="padding-top: 175px ; " >Misión
+                <td class="textoss fondoo" style="padding-top: 175px ; background-image: url(../imgsAcercaDe/img8.webp);" >Misión
                     <br>
                     Llevar inspiración e innovación a cada atleta del mundo.
                 </td>
@@ -146,7 +146,7 @@
 
 
                 <td><img src="../imgsAcercaDe/img5.webp" alt="" style="width:100% ;" class="img3"></td>
-                <td class="textoss fondoo" style="padding-top: 160px ;">Objetivo
+                <td class="textoss fondoo" style="padding-top: 160px ; background-image: url(../imgsAcercaDe/img8.webp);">Objetivo
                     <br>
                     Ofrecer calzado en la máxima calidad para que nuestros clientes practiquen
                     su deporte favorito con la máxima
