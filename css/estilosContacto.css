@@ -46,7 +46,7 @@ body{
     top: 0;
     left: 0;
 
-    background: #4091EC;
+    background: rgb(101, 101, 165);
     opacity: 0.9;
 }
 
@@ -233,6 +233,4 @@ form.form_contact input[type="button"]:hover{
 	color: #fff;
 	border: 2px solid #B14141;
 	cursor: pointer;
-
-	float: right;
 }

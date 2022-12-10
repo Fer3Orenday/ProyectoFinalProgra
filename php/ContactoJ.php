@@ -14,6 +14,10 @@
 </head>
 <body>
 
+<?php
+    include_once("encabezado.php");
+    ?>
+
     <section class="form_wrap">
 
         <section class="cantact_info">
@@ -47,6 +51,10 @@
         </form>
 
     </section>
+
+    <?php
+    include_once("pieDePagina.php");
+    ?>
 
 </body>
 </html>
