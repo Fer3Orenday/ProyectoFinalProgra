@@ -125,24 +125,127 @@
     </video>
 
 
+    <table class="table" style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td><img src="./imgsInicio/fondoFut.jpg" alt="" style="width:100% ;" class="img3 "></td>
+
+                <td class="seleccion" style="padding-top: 160px ; background-image: url(./imgsInicio/fondoVerde.webp);">
+                    Apoya a tu seleccion favorita con los mejores tenis!
+
+                    La mejor temporada ya esta aqui.
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <table class="table" style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="./imgsInicio/tenis11.jpg" alt="" style="width:100% ;" class="img4"></td>
+
+                <td>
+                    <img src="./imgsInicio/tenis2.jpg" alt="" style="width:100% ;" class="img4">
+                </td>
+
+                <td><img src="./imgsInicio/tenis5.webp" alt="" style="width:100% ;" class="img4"></td>
+
+                <td><img src="./imgsInicio/tenis4.jpg" alt="" style="width:100% ;" class="img4"></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+
+    <div style="background-image: url('./imgsInicio/fondoNavidad.jpg');">
+        <h1 class="fondNavidad">
+            <br>
+            Para esta navidad
+            <br>
+            Regala Drokey
+
+            <br>
+            <a class="btn btn-primary" href="./php/tienda.php" role="button" style="background-color: blue;">Comprar</a>
+            <br>
+
+        </h1>
+    </div>
+    <br>
+
+    <div>
+        <h3 style="font-family: 'Concert One', cursive;">¿Para quién compras?</h3>
+    </div>
+
+
+    <br>
+
+    <table  style="width: 100%; text-align: center;">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="./imgsInicio/mujer.jpg" alt="" style="width:100% ;" ></td>
+
+                <td>
+                    <img src="./imgsInicio/hombre.jpg" alt="" style="width:100% ;" >
+                </td>
+
+                <td><img src="./imgsInicio/niños.jpg" alt="" style="width:100% ;" ></td>
+
+            </tr>
+
+            <tr>
+                <td>MUJER</td>
+                <td>HOMBRE</td>
+                <td>NIÑOS</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+
+
+
+
     <!-- 3 IMAGENES  -->
     <div class="card-group">
         <div class="card">
-            <img src="./imagenes/img1.jpg" class="card-img-top imagen2" alt="...">
+            <img src="./imagenes/img1.jpg" class="card-img-top imagen2 img4" alt="...">
             <div class="card-body">
                 <p class="card-text imgss">Seguridad en cada paso</p>
 
             </div>
         </div>
         <div class="card">
-            <img src="./imagenes/img2.webp" class="card-img-top imagen2" alt="...">
+            <img src="./imagenes/img2.webp" class="card-img-top imagen2 img4" alt="...">
             <div class="card-body">
                 <p class="card-text imgss">Todo para mejorar tu rendimiento.</p>
 
             </div>
         </div>
         <div class="card">
-            <img src="./imagenes/img3.jpg" class="card-img-top imagen2" alt="...">
+            <img src="./imagenes/img3.jpg" class="card-img-top imagen2 img4" alt="...">
             <div class="card-body">
                 <p class="card-text imgss">Los tenis del momento</p>
 
@@ -151,17 +254,7 @@
     </div>
     <br>
 
-    <div style="background-image: url('./imgsInicio/fondoNavidad.jpg');" >
-        <h1 class="fondNavidad">
-            <br>
-            Para esta navidad 
-            <br>
-            Regala Drokey
-            <br>
-            <br>
-         
-        </h1>
-    </div>
+
 
 
     <!-- PIE DE PAGINA -->
@@ -237,7 +330,7 @@
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
 
                             <!-- Instagram -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://instagram.com/drokey_sport?igshid=ZDdkNTZiNTM=" role="button"><i class="fab fa-instagram"></i></a>
 
                             <!-- Linkedin -->
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
