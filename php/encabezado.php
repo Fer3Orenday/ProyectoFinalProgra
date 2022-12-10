@@ -30,25 +30,14 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="opcionesM2 opcion1">
-                    <a class="nav-link active" aria-current="page" href="#">hola</a>
-
-                </li>
-
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">-</a>
-                </li>
-
-
-                <li class="opcionesM2">
                     <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
                 </li>
-
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">-</a>
+                    <a class="nav-link active" aria-current="page" href="register.php">Registrarse</a>
                 </li>
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">Iniciar Sesión</a>
+                    <a class="nav-link active" aria-current="page" href="login.php">Iniciar Sesion</a>
                 </li>
             </ul>
     </nav>
