@@ -329,7 +329,7 @@
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
 
                             <!-- Instagram -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://instagram.com/drokey_sport?igshid=ZDdkNTZiNTM=" role="button"><i class="fab fa-instagram"></i></a>
 
                             <!-- Linkedin -->
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
