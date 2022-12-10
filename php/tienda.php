@@ -19,6 +19,7 @@
   include_once("encabezado.php");
   include_once("conexion.php");
 ?>
+
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
         <select name="muestra" id="">
                 <option value="todos">todos</option>
@@ -46,33 +47,36 @@
                     
                 }
                 $resultado = $conexion->query($con);
+                $i=0;
                 while ($fila = $resultado->fetch_assoc()) {
                     if(rand(0, 100)>50){
                         echo '
                        <div class="carts">
                             <div>
                                 <img class="imagen" src="../imagenes/'.$fila["imagen"].'" alt="">
-                                <p><span>20</span>$</p>
+                                <p><span>'.$fila["precio"].'</span>$</p>
                             </div>
-                            <p class="title"> NOMBRE: '.$fila["nombre"]." </br> DESCRIPCION: ".$fila["descripcion"]."</br>  PRECIO:".$fila["precio"]."</br>  EXISTENCIA:".$fila["existencia"].'</p>
-                            <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+                            <p class="title"> NOMBRE: '.$fila["nombre"]." </br> DESCRIPCION: ".$fila["descripcion"]."</br>  EXISTENCIA:".$fila["existencia"].'</p>
+                            <a href="" data-id="'.$i.'" class="btn-add-cart">add to cart</a>
                         </div>    
                        ';
                     }else{
                         $des=rand(10, 25);
                         $nuevo=($des*$fila["precio"])/100;
                         $pre=$fila["precio"]-$nuevo;
+                        
                         echo '
                         <div class="carts">
                              <div>
                                  <img class="imagen" src="../imagenes/'.$fila["imagen"].'" alt="">
-                                 <p><span>20</span>$</p>
+                                 <p><span>'.$pre.'</span>$</p>
                              </div>
-                             <p class="title"> NOMBRE: '.$fila["nombre"]." </br> DESCRIPCION: ".$fila["descripcion"]."</br>  PRECIO:".$fila["precio"]."</br> DESCUENTO:".$des."</br>  NUEVO PRECIO:".$pre."</br>  EXISTENCIA:".$fila["existencia"].'</p>
-                             <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+                             <p class="title"> NOMBRE: '.$fila["nombre"]." </br> DESCRIPCION: ".$fila["descripcion"]."</br> DESCUENTO:".$des." </br>  PRECIO:".$fila["precio"]." </br>  NUEVO PRECIO:".$pre."</br>  EXISTENCIA:".$fila["existencia"].'</p>
+                             <a href="" data-id="'.$i.'" class="btn-add-cart">add to cart</a>
                          </div>    
                         ';
                     }
+                    $i++;
                        
                 }
             ?> 
@@ -87,7 +91,7 @@
         }
 
     </script>
-    <script src="./custom.js" ></script>
+    <script src="../js/custom.js" ></script>
 </body>
 
 </html>
