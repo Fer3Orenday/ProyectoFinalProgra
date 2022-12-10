@@ -40,7 +40,7 @@
 
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
+                    <a class="nav-link active" aria-current="page" href="acercaDe.php">Acerca de</a>
                 </li>
 
                 <li class="opcionesM2">
