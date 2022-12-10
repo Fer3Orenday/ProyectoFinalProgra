@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/estilosEncabezado.css">
     <link rel="stylesheet" href="./css/estilosImagen.css">
     <link rel="stylesheet" href="./css/estilosPagInicio.css">
+    <link rel="stylesheet" href="./css/carusel.css">
     <!-- link fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
@@ -20,6 +21,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
     <!-- link fontawesome -->
     <script src="https://kit.fontawesome.com/25e2610697.js" crossorigin="anonymous"></script>
+    <script src="./js/carrusel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    
 </head>
 
 <body style="background-color: rgb(253, 253, 246);">
@@ -180,6 +186,17 @@
             <br>
             <a class="btn btn-primary" href="./php/tienda.php" role="button" style="background-color: blue;">Comprar</a>
             <br>
+            <p>
+  <a class="btn btn-primary" data-toggle="collapse" href="./imagenes/1.png" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Obtener codigo de cupon
+  </a>
+  
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  </div>
+</div>
 
         </h1>
     </div>
@@ -253,45 +270,40 @@
     </div>
     <br>
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./imagenes/a1.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Calzado Adidas de Dama</h5>
-        <p>Nueva Coleccion</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="./imagenes/a2.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Calzado Reebok de Caballero</h5>
-        <p>Nueva Coleccion</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="./imagenes/a4.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Calzado Unisex</h5>
-        <p>Nueva Coleccion</p>
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+<!--Carrusel-->
 
+ <div id="carrusel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagenes/a1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/a2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/a4.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+    </div>
+       
+
+<br>
+<br>
 
 
     <!-- PIE DE PAGINA -->
@@ -336,6 +348,10 @@
                                 <a class="text-black">Dubai</a>
                             </p>
                         </div>
+
+                        <p>
+                                <a class="text-black">Descuento gratis</a>
+                            </p>
                         <!-- Grid column -->
 
                         <hr class="w-100 clearfix d-md-none" />
