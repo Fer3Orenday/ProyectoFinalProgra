@@ -77,7 +77,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Contáctanos</a>
+                            <a class="nav-link active" aria-current="page" href="contactanos.html">Contáctanos</a>
                         </li>
                         <li class="opcionesM">
                             <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
