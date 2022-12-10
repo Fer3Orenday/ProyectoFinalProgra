@@ -31,10 +31,10 @@
             </section>
         </section>
 
-        <form action="" class="form_contact">
+        <form action="email.php" class="form_contact">
             <h2>Envia un mensaje</h2>
             <div class="user_info">
-                <label for="names">Nombres *</label>
+                <label for="name">Nombres *</label>
                 <input type="text" id="names">
 
                 <label for="phone">Telefono / Celular</label>
@@ -46,7 +46,7 @@
                 <label for="mensaje">Mensaje *</label>
                 <textarea id="mensaje"></textarea>
 
-                <input type="button" value="Enviar Mensaje" id="btnSend">
+                <input type="submit" value="Enviar Mensaje" id="btnSend">
             </div>
         </form>
 
