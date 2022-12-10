@@ -133,7 +133,7 @@
         <tbody>
             <tr>
 
-                <td><img src="./imgsInicio/fondoFut.jpg" alt="" style="width:100% ;" class="img3"></td>
+                <td><img src="./imgsInicio/fondoFut.jpg" alt="" style="width:100% ;" class="img3 "></td>
 
                 <td class="seleccion" style="padding-top: 160px ; background-image: url(./imgsInicio/fondoVerde.webp);">
                     Apoya a tu seleccion favorita con los mejores tenis!
@@ -154,47 +154,21 @@
         </thead>
         <tbody>
             <tr>
-                <td><img src="./imgsInicio/tenis11.jpg" alt="" style="width:100% ;" class="img3"></td>
+                <td><img src="./imgsInicio/tenis11.jpg" alt="" style="width:100% ;" class="img4"></td>
 
                 <td>
-                    <img src="./imgsInicio/tenis2.jpg" alt="" style="width:100%">
+                    <img src="./imgsInicio/tenis2.jpg" alt="" style="width:100% ;" class="img4">
                 </td>
 
-                <td><img src="./imgsInicio/tenis5.webp" alt="" style="width:100% ;" class="img3"></td>
+                <td><img src="./imgsInicio/tenis5.webp" alt="" style="width:100% ;" class="img4"></td>
 
-                <td><img src="./imgsInicio/tenis4.jpg" alt="" style="width:100% ;" class="img3"></td>
+                <td><img src="./imgsInicio/tenis4.jpg" alt="" style="width:100% ;" class="img4"></td>
             </tr>
 
 
         </tbody>
     </table>
 
-
-    <!-- 3 IMAGENES  -->
-    <div class="card-group">
-        <div class="card">
-            <img src="./imagenes/img1.jpg" class="card-img-top imagen2" alt="...">
-            <div class="card-body">
-                <p class="card-text imgss">Seguridad en cada paso</p>
-
-            </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/img2.webp" class="card-img-top imagen2" alt="...">
-            <div class="card-body">
-                <p class="card-text imgss">Todo para mejorar tu rendimiento.</p>
-
-            </div>
-        </div>
-        <div class="card">
-            <img src="./imagenes/img3.jpg" class="card-img-top imagen2" alt="...">
-            <div class="card-body">
-                <p class="card-text imgss">Los tenis del momento</p>
-
-            </div>
-        </div>
-    </div>
-    <br>
 
     <div style="background-image: url('./imgsInicio/fondoNavidad.jpg');">
         <h1 class="fondNavidad">
@@ -209,6 +183,46 @@
 
         </h1>
     </div>
+    <br>
+
+    <div>
+        <h3 style="font-family: 'Concert One', cursive;">¿Para quién compras?</h3>
+    </div>
+
+
+    <br>
+
+
+
+
+
+    <!-- 3 IMAGENES  -->
+    <div class="card-group">
+        <div class="card">
+            <img src="./imagenes/img1.jpg" class="card-img-top imagen2 img4" alt="...">
+            <div class="card-body">
+                <p class="card-text imgss">Seguridad en cada paso</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/img2.webp" class="card-img-top imagen2 img4" alt="...">
+            <div class="card-body">
+                <p class="card-text imgss">Todo para mejorar tu rendimiento.</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/img3.jpg" class="card-img-top imagen2 img4" alt="...">
+            <div class="card-body">
+                <p class="card-text imgss">Los tenis del momento</p>
+
+            </div>
+        </div>
+    </div>
+    <br>
+
+
 
 
     <!-- PIE DE PAGINA -->
