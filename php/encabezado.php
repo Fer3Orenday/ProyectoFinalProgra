@@ -98,7 +98,7 @@
                         <div class="header-section container">
                         
                             <div>
-                                <img onmouseover="showCart(this)"  style="width: 100px;" class="cart" src="../imagenes/cart.png" alt="">
+                                <img onmouseover="showCart(this)"  style="width: 100px;" class="cart" src="../imagenes/cart.pn" alt="">
                                 <p class="count-product">0</p>
                             </div>
                             <div class="cart-products" id="products-id">
