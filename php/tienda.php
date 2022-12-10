@@ -1,106 +1,97 @@
-<?php
-    include_once("conexion.php");
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="../css/style.css">
     <style>
         .imagen:hover {filter: opacity(.5);}
+        .imagen{
+            width: 300px;
+            height: 300px;
+        }
     </style>
 </head>
-<body style="background: rgb(98, 98, 234);">     
-    <?php
-$sql = 'select * from productos';
-$resultado = $conexion -> query($sql);
-        $numPro = 0;
-    ?>
-    <script> var array=[];</script>
-    <?php
-        $proxfi=3;$con=0;$tot=0;
-        echo "<div class='card-group'>";
-        while( $fila = $resultado ->  fetch_assoc()){
-            
-            $imagen = $fila['imagen'];
-            $producto = $fila['nombre'];
-            $precio = $fila['precio'];
-            //echo $con;
-            if($con==$proxfi){
-                $con=-1;
-                //echo "salto";
-                echo "</div>";
-                echo "<div class='card-group'>";
-            }
-            
-    ?>
-        <script>
-        array.push("<?php echo $producto ?>");
-        
-        </script>
-        <div class="card p-3,p-3 mb-2 bg-secondary text-white" class="" >
-            <img src="../imagenes/<?php echo $imagen ?>" class="card-img-top, imagen" style=""alt="...">
-            <div class="card-body">
-                <h5 class="card-title"><?php echo $fila['nombre']; ?></h5>
-                <p class="card-text"><?php echo $fila['descripcion']; ?></p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><?php echo $fila['existencia']; ?></li>
-                <li class="list-group-item"> 
-                 <?php
-                 $total=0;
-                   if(rand(1,100)<50){
-                        echo"<p style='color: blue; text-decoration:line-through; font-weight: bold;font-weight: 900;font-size: xx-large;'>";
-                        echo $fila['precio']." </p>";
-                        $des=rand(10,30);
-                        $total=$fila['precio']*((100-$des)/100);
-                        echo "<p>OFERTA DEL ".$des."%  EL NUEVO PRECIO ES: ".$total;
+<body>
+<?php
+  include_once("encabezado.php");
+  include_once("conexion.php");
+?>
+
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+        <select name="muestra" id="">
+                <option value="todos">todos</option>
+                <?php
+                $con="SELECT categoria from productos GROUP by categoria";
+                $resultado = $conexion->query($con);
+                while ($fila = $resultado->fetch_assoc()) {
+                    echo "<option  value=".$fila["categoria"].">".$fila["categoria"]."</option>";          
+                }
+                ?> 
+        </select>  
+        <input type="submit" value="Buscar">
+</form>
+<section class="container">
+        <div class="products">
+            <?php
+                if(!isset($_POST['muestra'])){
+                    $con = 'select * from productos ';
+                }else{
+                    if($_POST['muestra']=="todos"){
+                        $con = 'select * from productos ';
                     }else{
-                        $total=$fila['precio'];
-                    echo"<p >";
-                    echo $fila['precio']." </p>";
-                   }
-                 ?>
-                
-                </li>
-                <li class="list-group-item"><?php echo $fila['categoria']; ?></li>
-            </ul>
-            <div class="card-body">
-                <button id="<?php echo $numPro ?>" name="<?php echo $total ?>" onclick="agregar(this.id,this.name)">
-                    <img class="img-fluid" src="../imagenes/carrito.jpg" alt="" width="100" height="100">
-                </button>
-            </div>
+                        $con = 'select * from productos where categoria="'.$_POST['muestra'].'"';
+                    }
+                    
+                }
+                $resultado = $conexion->query($con);
+                $i=0;
+                while ($fila = $resultado->fetch_assoc()) {
+                    if(rand(0, 100)>50){
+                        echo '
+                       <div class="carts">
+                            <div>
+                                <img class="imagen" src="../imagenes/'.$fila["imagen"].'" alt="">
+                                <p><span>'.$fila["precio"].'</span>$</p>
+                            </div>
+                            <p class="title"> NOMBRE: '.$fila["nombre"]." </br> DESCRIPCION: ".$fila["descripcion"]."</br>  EXISTENCIA:".$fila["existencia"].'</p>
+                            <a href="" data-id="'.$i.'" class="btn-add-cart">add to cart</a>
+                        </div>    
+                       ';
+                    }else{
+                        $des=rand(10, 25);
+                        $nuevo=($des*$fila["precio"])/100;
+                        $pre=$fila["precio"]-$nuevo;
+                        
+                        echo '
+                        <div class="carts">
+                             <div>
+                                 <img class="imagen" src="../imagenes/'.$fila["imagen"].'" alt="">
+                                 <p><span>'.$pre.'</span>$</p>
+                             </div>
+                             <p class="title"> NOMBRE: '.$fila["nombre"]." </br> DESCRIPCION: ".$fila["descripcion"]."</br> DESCUENTO:".$des." </br>  PRECIO:".$fila["precio"]." </br>  NUEVO PRECIO:".$pre."</br>  EXISTENCIA:".$fila["existencia"].'</p>
+                             <a href="" data-id="'.$i.'" class="btn-add-cart">add to cart</a>
+                         </div>    
+                        ';
+                    }
+                    $i++;
+                       
+                }
+            ?> 
         </div>
-    <?php
-            $numPro = $numPro+1;
-            $con++;
-            $tot++;
-        }//fin while
-        if($tot%$proxfi==0){
-            echo "</div>";
-
-        }
-    ?>
-
+    </section>
     <script>
-        console.log(array);    
-        var carrito=[], ine=0;
-        function agregar(id, precio){
-            var indice = parseInt(id);
-            carrito[ine]=array[indice]+" precio: "+precio;
-            ine++;
-            console.log(`Elegiste ${array[indice]}`);  
-            console.log("el precio es "+precio);     
-            console.log("total de cosas: "+carrito);
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
         }
-        
-    </script>
-<a href="../index.php" style="color: red;">VOLVER A ABC</a>
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
 
+    </script>
+    <script src="../js/custom.js" ></script>
 </body>
+
 </html>
