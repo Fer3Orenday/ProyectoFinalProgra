@@ -11,7 +11,6 @@
 </head>
 <body>
     
-    <div class="body-text">Agrega la informacion de Envio</div>
   <form>
     <div class="form-container">
       <div class="personal-information">

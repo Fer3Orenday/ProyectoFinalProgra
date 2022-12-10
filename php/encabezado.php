@@ -53,31 +53,15 @@
                 ?>
             
                 <li class="opcionesM2 opcion1">
-                    <a class="nav-link active" aria-current="page" href="../inicio.php">Inicio</a>
-
+                    <a class="nav-link active" aria-current="page" href="AcercaDe.php">Acerca De</a>
+                </li>
+                <li class="opcionesM2">
+                    <a class="nav-link active" aria-current="page" href="login.php">Iniciar Sesion</a>
                 </li>
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">-</a>
+                    <a class="nav-link active" aria-current="page" href="register.php">Registrarse</a>
                 </li>
-
-
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="acercaDe.php">Acerca de</a>
-                </li>
-
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">-</a>
-                </li>
-
-                <?php
-                if (!empty($_SESSION['usuario'])) {
-                  
-              ?>
-              <li class="opcionesM2"><a class="nav-link active" href="./terminar.php">Cerrar Sesion</a></li>
-              <?php
-                }
-              ?>
             </ul>
     </nav>
 
