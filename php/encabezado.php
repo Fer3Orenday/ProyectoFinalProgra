@@ -1,3 +1,8 @@
+<?php session_start();
+include_once("conexion.php");
+// Variable de sesión en array:
+
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -128,7 +133,32 @@
                                 <h3>Mi carrito</h3>
                                 
                                         <div class="card-items">
+                                        <?php 
+                                            //$_SESSION['productos'] = array();
+                                            //$_SESSION['total']=0;
+                                            //$_SESSION['precios']=array();
                                             
+                                            $array_num = count($_SESSION['productos']);
+                                            for ($i = 0; $i < $array_num; $i++){
+                                                $con = 'select * from productos where idProd='.$_SESSION['productos'][$i];
+                                                //echo "<script>alert(".$con.")</script>";
+                                                $resultado = $conexion->query($con);
+                                                while ($fila = $resultado->fetch_assoc()) {
+                                                    echo '
+                                                    <div class="item">
+                                                        <img src="../imagenes/'.$fila['imagen'].'" alt="no se">
+                                                        <div class="item-content">
+                                                            <h5>'.$fila['nombre'].'</h5>
+                                                            <h5 class="cart-price">'.$_SESSION['precios'][$i].'</h5>
+                                                            <h6>'.$fila['existencia'].'</h6>
+                                                        </div>
+                                                        <span>X</span>
+                                                    </div>
+                                                    ';
+                                                }
+                                            }
+                                            ?>
+                                        <!---->
                                         </div>
                                    
                                 <h2>Total: <strong class="price-total">0</strong> $</h2>
@@ -152,7 +182,15 @@
                 </li>
             </ul>
     </nav>
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
 
+    </script>
 
 
 

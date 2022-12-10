@@ -1,4 +1,8 @@
-<?php session_start();?>
+<?php session_start();
+$_SESSION['productos'] = array();
+$_SESSION['total']=0;
+$_SESSION['precios']=array();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,7 +52,7 @@
 
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="/php/acercaDe.php">Acerca de</a>
+                    <a class="nav-link active" aria-current="page" href="php/acercaDe.php">Acerca de</a>
                 </li>
 
                 <li class="opcionesM2">
@@ -366,8 +370,6 @@
         <!-- Footer -->
     </div>
     <!-- End of .container -->
-
-
 
 
 
