@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,31 +31,24 @@
 
 <body style="background-color: rgb(253, 253, 246);">
 
-    <!-------------------- ENCABEZADO PARTE1 ----------------->
-
-    <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
+<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+
                 <li class="opcionesM2 opcion1">
-                    <a class="nav-link active" aria-current="page" href="#">hola</a>
-
+                    <a class="nav-link active" aria-current="page" href="php/AcercaDe.php">Acerca De</a>
                 </li>
+            <?php 
+                    if(empty($_SESSION['usuario'])){
+                        echo "<li class='opcionesM2'>
+                        <a class='nav-link active' aria-current='page' href='php/login.php'>Iniciar Sesion</a></li>";
+                    } else {
+                        echo "<li class='opcionesM2 style='padding-right:200px;'><p class='nav-link active' aria-current='page' href='#'>Bienvenido ".$_SESSION['usuario']."</p> </li>";
+                    }
+                ?>
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">-</a>
-                </li>
-
-
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
-                </li>
-
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">-</a>
-                </li>
-
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">Iniciar Sesión</a>
+                    <a class="nav-link active" aria-current="page" href="php/login.php">Registrarse</a>
                 </li>
             </ul>
     </nav>
@@ -65,7 +59,7 @@
         <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(171, 171, 218); position: sticky; ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="./imagenes/logo.png" alt="" width="40%" height="30%">
+                    <img src="../imagenes/logo.png" alt="" width="40%" height="30%">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -85,7 +79,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
                         </li>
                         <li class="opcionesM">
-                            <a class="nav-link active" aria-current="page" href="#">Contáctanos</a>
+                            <a class="nav-link active" aria-current="page" href="php/ContactoJ.php">Contáctanos</a>
                         </li>
                         <li class="opcionesM">
                             <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
@@ -115,11 +109,9 @@
             </ul>
     </nav>
 
+</body>
 
-
-
-
-
+</html>
 
     <!-- VIDEO DE INICIO  -->
 
