@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,6 +28,7 @@
 <nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+            
                 <li class="opcionesM2 opcion1">
                     <a class="nav-link active" aria-current="page" href="#">hola</a>
 
@@ -48,8 +48,12 @@
                 </li>
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">Iniciar Sesión</a>
+                    <a class="nav-link active" aria-current="page" href="login.php"><?php if(isset($_SESSION['usuario'])) echo "Bienvenido ".$_SESSION['usuario']; else echo "Iniciar Sesion"?></a>
                 </li>
+
+                <li class="opcionesM2 opcion1">
+                <a class="nav-link active" aria-current="page" href="#"><?php if(isset($_SESSION['usuario'])) echo "Bienvenido ".$_SESSION['usuario'] ?></a>
+            </li>
             </ul>
     </nav>
 
