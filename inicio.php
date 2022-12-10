@@ -190,30 +190,29 @@
     </div>
 
 
-    <br>
-
     <table  style="width: 100%; text-align: center;">
-        <thead>
-            <tr>
 
-            </tr>
-        </thead>
+
+        
         <tbody>
             <tr>
-                <td><img src="./imgsInicio/mujer.jpg" alt="" style="width:100% ;" ></td>
+                <td style="background-image: url('./imgsInicio/rosa.webp');"><img src="./imgsInicio/mujer.jpg" alt="" style="width:70% ;" ></td>
 
-                <td>
-                    <img src="./imgsInicio/hombre.jpg" alt="" style="width:100% ;" >
+                <td style="background-image: url('./imgsInicio/azul.jpg');">
+                    <img src="./imgsInicio/hombre.jpg" alt="" style="width:70% ;" >
                 </td>
 
-                <td><img src="./imgsInicio/niños.jpg" alt="" style="width:100% ;" ></td>
+       
 
             </tr>
 
+            <br>
+            <br>
             <tr>
-                <td>MUJER</td>
-                <td>HOMBRE</td>
-                <td>NIÑOS</td>
+                <td><a class="btn btn-primary" href="#" role="button">Mujer</a></td>
+                <td><a class="btn btn-primary" href="#" role="button">Hombre</a></td>
+              
+
             </tr>
 
 
@@ -258,9 +257,9 @@
 
     <!-- PIE DE PAGINA -->
 
-    <div>
+    <div >
         <!-- Footer -->
-        <footer class="text-center text-lg-start text-black" style="background-color:  rgb(171, 171, 218)">
+        <footer class="text-center text-lg-start text-black" style="background-color: rgb(171, 171, 218)">
             <!-- Grid container -->
             <div class="container p-4 pb-0">
                 <!-- Section: Links -->
@@ -273,9 +272,9 @@
                                 Drokey
                             </h6>
                             <p>
-                                Siendo la mejor compañia de tienda deportiva desde 2014, brindamos
+                                Siendo la mejor compañia de tienda deportiva desde 2014, brindamos 
                                 la mejor calidad en nuestros productos. Siempre acompañandote a donde
-                                vayas.
+                                vayas. 
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -332,7 +331,7 @@
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://instagram.com/drokey_sport?igshid=ZDdkNTZiNTM=" role="button"><i class="fab fa-instagram"></i></a>
 
                             <!-- Linkedin -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://instagram.com/drokey_sport?igshid=ZDdkNTZiNTM=" role="button"><i class="fab fa-linkedin-in"></i></a>
                             <!-- Github -->
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
                         </div>
@@ -353,11 +352,6 @@
         <!-- Footer -->
     </div>
     <!-- End of .container -->
-
-
-
-
-
 
 
 
