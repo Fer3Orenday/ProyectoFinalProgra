@@ -5,7 +5,7 @@
 ?>
         <script type="text/javascript">
         //Redireccionamiento tras 5 segundos
-        setTimeout( function() { window.location.href = "../inicio.php"; }, 500 );
+        setTimeout( function() { window.location.href = "../inicio.php"; }, 5 );
         </script>
 <?php 
     }else{                              #cookies no fijadas
@@ -14,7 +14,7 @@
         ?>
         <script type="text/javascript">
         //Redireccionamiento tras 5 segundos
-        setTimeout( function() { window.location.href = "../inicio.php"; }, 500 );
+        setTimeout( function() { window.location.href = "../inicio.php"; }, 5 );
         </script>
         <?php 
     }
