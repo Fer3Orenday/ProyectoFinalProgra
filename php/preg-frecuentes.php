@@ -1,6 +1,4 @@
-<?php
-include ('encabezado.php');
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +20,12 @@ include ('encabezado.php');
 
 <body>
 
+<?php
+include ('encabezado.php');
+?>
+
+<br>
+<br>
 <nav class="navbar navbar-expand " class="encabezado" style="background-color:rgb(217, 217, 235); position: sticky;">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">

@@ -26,10 +26,7 @@
             overflow-y: scroll;
             scroll-behavior: smooth;
             }
-            scroll-page {
-           
-           
-            }
+
     </style>
 </head>
 
@@ -39,24 +36,24 @@
 
 <!-------------------- ENCABEZADO PARTE1 ----------------->
 
-<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 700px; ">
+<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 600px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
 
                 <li class="opcionesM2 opcion1">
-                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"  class="nav-link active" aria-current="page" href="php/AcercaDe.php">Acerca De</a>
+                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"  class="nav-link active" aria-current="page" href="./acercaDe.php">Acerca De</a>
                 </li>
             <?php 
                     if(empty($_SESSION['usuario'])){
                         echo "<li class='opcionesM2'>
-                        <a class='nav-link active' aria-current='page' href='login.php'>Iniciar Sesion</a></li>";
+                        <a class='nav-link active' aria-current='page' href=''>Iniciar Sesion</a></li>";
                     } else {
                         echo "<li class='opcionesM2 style='padding-right:200px;'><p class='nav-link active' aria-current='page' href='#'>Bienvenido ".$_SESSION['usuario']."</p> </li>";
                     }
                 ?>
 
                 <li class="opcionesM2">
-                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"class="nav-link active" aria-current="page" href="php/login.php">Registrarse</a>
+                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"class="nav-link active" aria-current="page" href="./register.php">Registrarse</a>
                 </li>
             </ul>
     </nav>
@@ -87,10 +84,10 @@
                             <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Nosotros</a>
                         </li>
                         <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Contáctanos</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="./ContactoJ.php">Contáctanos</a>
                         </li>
                         <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Ayuda</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="./preg-frecuentes.php">Ayuda</a>
                         </li>
 
                     </ul>
@@ -98,7 +95,7 @@
                         <div class="header-section container">
                         
                             <div>
-                                <img onmouseover="showCart(this)"  style="width: 100px;" class="cart" src="../imagenes/card.pn" alt="">
+                                <img onmouseover="showCart(this)"  style="width: 100px;" class="cart" src="../imagenes/cart.png" alt="">
                                 <p class="count-product">0</p>
                             </div>
                             <div class="cart-products" id="products-id">

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/estilosPagInicio.css">
     <link rel="stylesheet" href="./css/carusel.css">
     <link rel="stylesheet" href="./css/estilosSuscribirse.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- link fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
@@ -40,10 +41,7 @@
             overflow-y: scroll;
             scroll-behavior: smooth;
             }
-            scroll-page {
-           
-           
-            }
+
     </style>
 
 
@@ -51,19 +49,15 @@
 </head>
 
 
+
 <body style="background-color: rgb(253, 253, 246);">
 
-
-    <!-------------------- ENCABEZADO PARTE1 ----------------->
-
-<!-------------------- ENCABEZADO PARTE1 ----------------->
-
-<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 700px; ">
+<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 650px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
 
                 <li class="opcionesM2 opcion1">
-                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"  class="nav-link active" aria-current="page" href="php/AcercaDe.php">Acerca De</a>
+                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"  class="nav-link active" aria-current="page" href="./php/acercaDe.php">Acerca De</a>
                 </li>
             <?php 
                     if(empty($_SESSION['usuario'])){
@@ -75,7 +69,7 @@
                 ?>
 
                 <li class="opcionesM2">
-                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"class="nav-link active" aria-current="page" href="php/login.php">Registrarse</a>
+                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"class="nav-link active" aria-current="page" href="./php/register.php">Registrarse</a>
                 </li>
             </ul>
     </nav>
@@ -86,7 +80,7 @@
         <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(171, 171, 218); position: sticky; ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="../imagenes/logo.png" alt="" width="40%" height="30%">
+                    <img src="./imagenes/logo.png" alt="" width="40%" height="30%">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -106,10 +100,10 @@
                             <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Nosotros</a>
                         </li>
                         <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Contáctanos</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="./php/ContactoJ.php">Contáctanos</a>
                         </li>
                         <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Ayuda</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="./php/preg-frecuentes.php">Ayuda</a>
                         </li>
 
                     </ul>
@@ -117,7 +111,7 @@
                         <div class="header-section container">
                         
                             <div>
-                                <img onmouseover="showCart(this)"  style="width: 100px;" class="cart" src="../imagenes/cart.png" alt="">
+                                <img onmouseover="showCart(this)"  style="width: 100px;" class="cart" src="./imagenes/cart.png" alt="">
                                 <p class="count-product">0</p>
                             </div>
                             <div class="cart-products" id="products-id">
@@ -151,6 +145,13 @@
                 </li>
             </ul>
     </nav>
+
+
+
+
+
+
+
 
 
 </body>
@@ -218,9 +219,6 @@
         Para esta navidad
         <br>
         Regala Drokey
-
-        <br>
-        <a class="btn btn-primary" href="./php/tienda.php" role="button" style="background-color: blue;">Comprar</a>
         <br>
             <p>
   <a class="btn btn-primary" data-toggle="collapse" href="./imagenes/1.png" role="button" aria-expanded="false" aria-controls="collapseExample">
