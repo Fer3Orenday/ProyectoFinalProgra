@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php session_start();
+$_SESSION['productos'] = array();
+$_SESSION['total']=0;
+$_SESSION['precios']=array();
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -69,7 +73,16 @@
                 ?>
 
                 <li class="opcionesM2">
-                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"class="nav-link active" aria-current="page" href="./php/register.php">Registrarse</a>
+                    <a class="nav-link active" aria-current="page" href="#">-</a>
+                </li>
+
+
+                <li class="opcionesM2">
+                    <a class="nav-link active" aria-current="page" href="/php/acercaDe.php">Acerca de</a>
+                </li>
+
+                <li class="opcionesM2">
+                    <a class="nav-link active" aria-current="page" href="#">-</a>
                 </li>
             </ul>
     </nav>
@@ -345,10 +358,9 @@
             </button>
         </div>
     </div>
-       
+    <!-- End of .container -->
 
-<br>
-<br>
+
 
 
 <!-- PIE DE PAGINA -->

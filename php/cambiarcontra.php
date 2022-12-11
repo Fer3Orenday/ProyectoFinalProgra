@@ -1,6 +1,6 @@
  <?php
-    session_start();
     include('encabezado.php');
+    $_SESSION['carrito'] = array();
  ?>
  <!DOCTYPE html>
  <html lang="en">
