@@ -1,6 +1,7 @@
 <!--------------Valida el login e ingresa---------------------------->
  <?php session_start();
  include("conexion.php");
+ if(!isset($_SESSION['intentosLogin'])) $_SESSION['intentosLogin']=0;
 #session_start();
         if(empty($_POST['usuario']) && empty($_POST['pass'])){
          echo "<div class='alert alert-warning' role='alert'>
@@ -23,6 +24,7 @@
                     #redireccionamos a inicio
                     echo "usuario correcto";
                     $_SESSION['usuario']=$usuario;
+                    $_SESSION['intentosLogin']=0;
                     echo "<script>  
         document.loginn.submit(); 
         </script> ";  
@@ -37,7 +39,6 @@
                         </div>";
                     }
                     if($_SESSION['intentosLogin']==2){
-                        $sql=$conexion->query("UPDATE user set estado=0 where nombreUsuario='$usuario'" );
                         echo "<div class='alert alert-warning' role='alert'>
                                 Solo te queda un intento, si fallas tu cuenta se bloqueara
                             ";

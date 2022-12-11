@@ -31,10 +31,16 @@
             <?php 
                     if(empty($_SESSION['usuario'])){
                         echo "<li class='opcionesM2'>
-                        <a class='nav-link active' aria-current='page' href='php/login.php'>Iniciar Sesion</a></li>";
+                        <a class='nav-link active' aria-current='page' href='php/login.php'>Iniciar Sesion</a></li>
+                        
+                        <li class='opcionesM2'>
+                        <a class='nav-link active' aria-current='page' href='php/register.php'>Registrarse</a></li>";
                     } else {
                         echo "<li class='opcionesM2 style='padding-right:200px;'><p class='nav-link active' aria-current='page' href='#'>Bienvenido ".$_SESSION['usuario']."</p> </li>";
                     }
+                ?>
+
+<?php 
                 ?>
             
                 <li class="opcionesM2 opcion1">
@@ -48,7 +54,7 @@
 
 
                 <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="/php/acercaDe.php">Acerca de</a>
+                    <a class="nav-link active" aria-current="page" href="php/acercaDe.php">Acerca de</a>
                 </li>
 
                 <li class="opcionesM2">

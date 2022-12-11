@@ -1,5 +1,4 @@
  <?php
-    session_start();
     include('encabezado.php');
  ?>
  <!DOCTYPE html>

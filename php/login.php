@@ -1,6 +1,5 @@
 <?php
-session_start();
-$_SESSION['intentosLogin'] = 0;
+$_SESSION['intentosLogin']=0;
 include('encabezado.php');
 ?>
 <!DOCTYPE html>
