@@ -72,7 +72,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Opcion1</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="../inicio.php">Inicio</a>
                         </li>
                         <li class="opcionesM">
                             <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Opcion2</a>
