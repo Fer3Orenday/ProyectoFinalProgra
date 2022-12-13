@@ -1,0 +1,13 @@
+#cr{
+
+    background-color: bisque;
+    border-color: blueviolet ;
+
+}
+
+.row, .col{
+
+    text-align: center;
+    font-size: 1.2em;
+
+}

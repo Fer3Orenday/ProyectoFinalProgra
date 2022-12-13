@@ -1,7 +1,26 @@
 <?php session_start();
-$_SESSION['productos'] = array();
-$_SESSION['total']=0;
-$_SESSION['precios']=array();
+    $_SESSION['productos'] = array();
+    $_SESSION['total']=0;
+    $_SESSION['cuantos']=0;
+    $_SESSION['precios']=array();
+    include("php/conexion.php");
+    $con="SELECT idProd  from productos;";
+    $resultado = $conexion->query($con);
+    while ($fila = $resultado->fetch_assoc()) {
+        //echo $fila['idProd']."</br>";
+        $de=0;
+        if(rand(0,100)<50){
+            //descuento
+           $de=rand(10,25);
+
+        }else{
+            //no descuento
+            $de=0;
+        }
+        $sql="UPDATE productos SET descuento=".$de." where idProd=".$fila['idProd'];
+        //echo $sql;
+        $fin=$conexion->query($sql);
+    }
  ?>
 
 <!DOCTYPE html>
@@ -12,7 +31,7 @@ $_SESSION['precios']=array();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.png">
     <!-- LINK bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <!-- link estilos -->
@@ -23,6 +42,7 @@ $_SESSION['precios']=array();
     <link rel="stylesheet" href="./css/estilosSuscribirse.css">
     <link rel="stylesheet" href="./css/style.css">
     <!-- link fonts -->
+    <link rel="icon" type="image/x-icon" href="/imagenes/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
@@ -30,9 +50,6 @@ $_SESSION['precios']=array();
     <!-- link fontawesome -->
     <script src="https://kit.fontawesome.com/25e2610697.js" crossorigin="anonymous"></script>
     <script src="./js/carrusel.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     
 
     <style>
@@ -56,34 +73,38 @@ $_SESSION['precios']=array();
 
 <body style="background-color: rgb(253, 253, 246);">
 
-<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 650px; ">
+<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 500px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-
-                <li class="opcionesM2 opcion1">
-                    <a style=" font-family: 'Concert One', cursive;  font-size: 20px;"  class="nav-link active" aria-current="page" href="./php/acercaDe.php">Acerca De</a>
-                </li>
             <?php 
                     if(empty($_SESSION['usuario'])){
-                        echo "<li class='opcionesM2'>
-                        <a class='nav-link active' aria-current='page' href='login.php'>Iniciar Sesion</a></li>";
+            ?>
+                        <li class='opcionesM2'>
+                        <a  style="font-size: 20px;
+    font-family: 'Concert One', cursive;" class='nav-link active' aria-current='page' href='php/login.php'>Iniciar Sesion</a></li>
+
+                        <li class='opcionesM2'>
+                        <a style="font-size: 20px;
+    font-family: 'Concert One', cursive;" class='nav-link active' aria-current='page' href='php/register.php'>Registrarse</a></li>
+                <?php       
                     } else {
-                        echo "<li class='opcionesM2 style='padding-right:200px;'><p class='nav-link active' aria-current='page' href='#'>Bienvenido ".$_SESSION['usuario']."</p> </li>";
-                    }
                 ?>
-
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">-</a>
+                        <li class='opcionesM2' style='padding-right:200px;'><p style="font-size: 20px;
+    font-family: 'Concert One', cursive;" class='nav-link active' aria-current='page' href='#'>Bienvenido <?php echo $_SESSION['usuario']?></p> </li>
+                <?php    }
+                ?>
+                <li class="opcionesM2 opcion1">
+                    <a style="font-size: 20px;
+    font-family: 'Concert One', cursive;" class="nav-link active" aria-current="page" href="php/acercaDe.php">Acerca De</a>
                 </li>
-
-
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="/php/acercaDe.php">Acerca de</a>
-                </li>
-
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="#">-</a>
-                </li>
+                <?php
+                    if (!empty($_SESSION['usuario'])) {
+                ?>
+              <li class="opcionesM2"><a style="font-size: 20px;
+    font-family: 'Concert One', cursive;" class="nav-link active" href="php/terminar.php">Cerrar Sesion</a></li>
+              <?php
+                }
+              ?>
             </ul>
     </nav>
 
@@ -104,19 +125,14 @@ $_SESSION['precios']=array();
                             <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="./inicio.php">Inicio</a>
                         </li>
                         <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Opcion2</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="./php/tienda.php">Tienda</a>
+                        </li>
+ 
+                        <li class="opcionesM">
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="php/ContactoJ.php">Contáctanos</a>
                         </li>
                         <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Opcion3</a>
-                        </li>
-                        <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="#">Nosotros</a>
-                        </li>
-                        <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="./php/ContactoJ.php">Contáctanos</a>
-                        </li>
-                        <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="./php/preg-frecuentes.php">Ayuda</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px; padding-right: 200px;" class="nav-link active" aria-current="page" href="./php/preg-frecuentes.php">Ayuda</a>
                         </li>
 
                     </ul>
@@ -147,7 +163,6 @@ $_SESSION['precios']=array();
             </div>
         </nav>
     </header>
-
     <!-------------------- ENCABEZADO PARTE 3 ----------------->
 
     <nav class="navbar navbar-expand " class="encabezado" style="background-color:rgb(217, 217, 235); position: sticky;">
@@ -234,7 +249,7 @@ $_SESSION['precios']=array();
         Regala Drokey
         <br>
             <p>
-  <a class="btn btn-primary" data-toggle="collapse" href="./imagenes/1.png" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <a class="btn btn-primary" data-toggle="collapse" href="php/cupon.php" role="button" aria-expanded="false" aria-controls="collapseExample">
     Obtener codigo de cupon
   </a>
   

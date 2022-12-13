@@ -1,4 +1,4 @@
-<?php ;
+<?php 
 include_once("conexion.php");
 // Variable de sesión en array:
 if (isset($_REQUEST['Bo'])){
@@ -66,20 +66,17 @@ if (isset($_REQUEST['Bo'])){
 
 <body>
 
-
    <!-------------------- ENCABEZADO PARTE1 ----------------->
 
 <!-------------------- ENCABEZADO PARTE1 ----------------->
 
-<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 10%; ">
+<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 600px; ">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul style=" font-family: 'Concert One', cursive;  font-size: 20px;" class="navbar-nav">
             <?php 
                     if(empty($_SESSION['usuario'])){
             ?>
-                        <li><i class="fa-solid fa-user"></i></li>
                         <li class='opcionesM2'>
-                        
                         <a  style="font-size: 20px;
     font-family: 'Concert One', cursive;" class='nav-link active' aria-current='page' href='login.php'>Iniciar Sesion</a></li>
 
@@ -123,86 +120,19 @@ if (isset($_REQUEST['Bo'])){
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="../inicio.php">Inicio</a>
-                        </li>
-                        <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="tienda.php">tienda</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px; " class="nav-link active" aria-current="page" href="../php/produre.php">Aregar productos</a>
                         </li>
                         
-                        
                         <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="./ContactoJ.php">Contáctanos</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px; padding-left: 20px" class="nav-link active" aria-current="page" href="tienda.php">Tienda</a>
                         </li>
                         <li class="opcionesM">
-                            <a style="font-family: 'Concert One', cursive; font-size: 25px;" class="nav-link active" aria-current="page" href="./preg-frecuentes.php">Ayuda</a>
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px; padding-left: 20px " class="nav-link active" aria-current="page" href="pruJ.php">Graficas-talla</a>
                         </li>
-
+                        <li class="opcionesM">
+                            <a style="font-family: 'Concert One', cursive; font-size: 25px; padding-left: 20px " class="nav-link active" aria-current="page" href="pruJE.php">Graficas-Exis</a>
+                        </li>
                     </ul>
-                   
-                        <div class="header-section container">
-                        
-                            <div>
-                                <img onmouseover="showCart(this)"  style="width: 100px;" class="cart" src="../imagenes/cart.png" alt="">
-                                
-                                <p class="count-product"><?php echo $_SESSION['cuantos'];  ?></p>
-                            </div>
-                            <div class="cart-products" id="products-id">
-                            <scroll-container>
-                            <scroll-page>
-                                <p class="close-btn" onclick="closeBtn()">X</p>
-                                <h3>Mi carrito</h3>
-                                        
-                                        <div class="card-items">
-                                        <?php 
-                                            
-                                            
-                                            $array_num = count($_SESSION['productos']);
-                                            for ($i = 0; $i < $array_num; $i++){
-                                               
-                                                $con = 'select * from productos where idProd='.$_SESSION['productos'][$i];
-                                                //echo "<script>alert(".$con.")</script>";
-                                                $resultado = $conexion->query($con);
-                                                while ($fila = $resultado->fetch_assoc()) {
-                                                    echo '
-                                                    <form action="'.htmlspecialchars($_SERVER["PHP_SELF"]).'" method="post">
-                                                        <div class="item">
-                                                            <input type="hidden" name="ids" id="id" placeholder="id" value="'.$fila['idProd'].'"  >
-                                                            <input type="hidden" name="precios" id="precio" placeholder="precio" value="'.$_SESSION['precios'][$i].'"  >
-                                                            <img src="../imagenes/'.$fila['imagen'].'" alt="no se">
-                                                            <div class="item-content">
-                                                                <h5>'.$fila['nombre'].'</h5>
-                                                                <h5 class="cart-price">'.$_SESSION['precios'][$i].'</h5>
-                                                                <h6>'.$fila['existencia'].'</h6>
-                                                            </div>
-                                                            <button type="submit" name="Bo" id='.$_SESSION['productos'][$i].' class="btn btn-danger" >Borrar</button>
-                                                        </div>
-                                                    </form>
-                                                    ';
-                                                }
-                                            }
-                                            ?>
-                                        <!---->
-                                        </div>
-                                   
-                                <h2>Total: <strong class="price-total"><?php echo $_SESSION['total'];?></strong> $</h2>
-                                <?php 
-                                     if(empty($_SESSION['usuario'])){
-                                        echo "lo siento bro necesitas estar logiado para pagar";
-                                     }else{
-                                        
-                                        echo "<a href='infEnvio.php'><button>Pagar</button></a>";
-                                     }
-                                
-                                
-                                
-                                
-                                ?>
-                                
-                                </scroll-page>
-                                </scroll-container>
-                            </div>
-                        </div>
-                    
                 </div>
             </div>
         </nav>
@@ -215,12 +145,6 @@ if (isset($_REQUEST['Bo'])){
             <ul class="navbar-nav">
                 <li class="opcionesM2 opcion2">
                     <a style="font-family: 'Concert One', cursive; font-size: 20px;" class="nav-link active" aria-current="page" href="#" style="padding-left: 800px;">¡Nuevos lanzamientos cada dia!</a>
-                </li>
-                <li>
-                    <div data-video="" data-autoplay="0" data-loop="1" id="youtube-audio">
-
-                    </div>
-                    
                 </li>
             </ul>
     </nav>

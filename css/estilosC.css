@@ -1,0 +1,38 @@
+#cr{
+
+    background-color: rgb(117, 117, 163);
+    width: 70%;
+    align-items: center;
+    border-radius: 1em;
+    padding: 20%;
+
+}
+
+.col{
+
+    display: flex;
+    justify-content: center;
+    text-align:start;
+
+}
+
+#logo{
+
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+body{
+
+    background-color: rgb(200, 228, 200);
+
+}
+
+p{
+
+    font-size: 1.5em;
+    text-align: end;
+
+}
+

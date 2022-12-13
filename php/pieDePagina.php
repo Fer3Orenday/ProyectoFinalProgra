@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-
     <!-- LINK bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <!-- link estilos -->
@@ -17,10 +16,8 @@
     <!-- link fontawesome -->
     <script src="https://kit.fontawesome.com/25e2610697.js" crossorigin="anonymous"></script>
 </head>
-
 <body style="background-image: url('fondoRegalos.jpg') ;">
     <!-- PIE DE PAGINA -->
-
     <div >
         <!-- Footer -->
         <footer class="text-center text-lg-start text-black" style="background-color: rgb(171, 171, 218)">
@@ -42,9 +39,7 @@
                             </p>
                         </div>
                         <!-- Grid column -->
-
                         <hr class="w-100 clearfix d-md-none" />
-
                         <!-- Grid column -->
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold">Sucursales</h6>
@@ -60,14 +55,16 @@
                             <p>
                                 <a class="text-black">Dubai</a>
                             </p>
+                            <li class="nav-item">
+                             <a class="nav-link active" href="cupon2.php">Cupon gratis, por su visita</a>
+                             </li>
+                           
                         </div>
-                        <!-- Grid column -->
-
-                        <hr class="w-100 clearfix d-md-none" />
-
+                       <br>
                         <!-- Grid column -->
                         <hr class="w-100 clearfix d-md-none" />
-
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
                         <!-- Grid column -->
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
@@ -77,23 +74,17 @@
                             <p><i class="fas fa-print mr-3"></i> + 52 449 763 65 24</p>
                         </div>
                         <!-- Grid column -->
-
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold">Siguenos</h6>
-
                             <!-- Facebook -->
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-
                             <!-- Twitter -->
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-
                             <!-- Google -->
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
-
                             <!-- Instagram -->
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="https://instagram.com/drokey_sport?igshid=ZDdkNTZiNTM=" role="button"><i class="fab fa-instagram"></i></a>
-
                             <!-- Linkedin -->
                             <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://instagram.com/drokey_sport?igshid=ZDdkNTZiNTM=" role="button"><i class="fab fa-linkedin-in"></i></a>
                             <!-- Github -->
@@ -105,7 +96,6 @@
                 <!-- Section: Links -->
             </div>
             <!-- Grid container -->
-
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
                 © 2022 Company:
@@ -116,10 +106,4 @@
         <!-- Footer -->
     </div>
     <!-- End of .container -->
-
-
-
-
-
-
 </body>

@@ -1,7 +1,6 @@
 <?php
-
-$_SESSION['intentosLogin'] = 0;
-// include('encabezado.php');
+$_SESSION['intentosLogin']=0;
+//include('encabezado.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,27 +13,54 @@ $_SESSION['intentosLogin'] = 0;
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/estilosEncabezado.css">
+        <link rel="icon" type="image/x-icon" href="../imagenes/favicon.png">
+
     <title>Login</title>
 </head>
 
-<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 400px; ">
-        <div class="collapse navbar-collapse" id="navbarNav" style="display: flex; flex-direction: row; justify-content: flex-end;">
-            <ul class="navbar-nav">
-                <li class="opcionesM2 opcion1">
-                    <a class="nav-link active" aria-current="page" href="acercaDe.php">Acerca de</a>
-                </li>
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="register.php">Registrarse</a>
-                </li>
+<body>
+<nav class="navbar navbar-expand " class="encabezado" style="background-color: rgb(217, 217, 235);  padding-left: 600px; ">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul  class="navbar-nav">
+            <?php 
+                    if(empty($_SESSION['usuario'])){
+            ?>
+                        <li class='opcionesM2'>
+                        <a  style="font-size: 20px;
+    font-family: 'Concert One', cursive;" class='nav-link active' aria-current='page' href='login.php'>Iniciar Sesion</a></li>
 
-                <li class="opcionesM2">
-                    <a class="nav-link active" aria-current="page" href="../inicio.php">Pagina Principal
-                    </a>
+                        <li class='opcionesM2'>
+                        <a style="font-size: 20px;
+    font-family: 'Concert One', cursive;" class='nav-link active' aria-current='page' href='register.php'>Registrarse</a></li>
+               <?php       
+                    } else {
+                ?>
+                        <li class='opcionesM2' style='padding-right:200px;'><p style="font-size: 20px;
+    font-family: 'Concert One', cursive;" class='nav-link active' aria-current='page' href='#'>Bienvenido <?php echo $_SESSION['usuario']?></p> </li>
+                <?php    }
+                ?>
+                <li class="opcionesM2 opcion1">
+                    <a style="font-size: 20px;
+    font-family: 'Concert One', cursive;" class="nav-link active" aria-current="page" href="./acercaDe.php">Acerca De</a>
                 </li>
+                <li class="opcionesM2">
+                    <a style="font-size: 20px;
+    font-family: 'Concert One', cursive;" class="nav-link active" aria-current="page" href="../inicio.php">Inicio</a>
+                </li>
+                <?php
+                    if (!empty($_SESSION['usuario'])) {
+                ?>
+              <li class="opcionesM2"><a style="font-size: 20px;
+    font-family: 'Concert One', cursive;" class="nav-link active" href="./terminar.php">Cerrar Sesion</a></li>
+              <?php
+                }
+              ?>
+
             </ul>
     </nav>
 
-<body>
+
     <section class="vh-100">
         <div class="container-fluid h-custom">
             <div class="row d-flex justify-content-center align-items-center h-100">
@@ -80,9 +106,9 @@ $_SESSION['intentosLogin'] = 0;
                                     disabled>Ingresar</button>
                             </div>
                             <br>
-                            <!-- <p class="small fw-bold mt-2 pt-1 mb-0">No tienes cuenta? <a href="register.php"
+                            <p class="small fw-bold mt-2 pt-1 mb-0">No tienes cuenta? <a href="register.php"
                                     class="link-danger">Registrate</a></p>
-                            <br> -->
+                            <br>
                             <p class="small fw-bold mt-2 pt-1 mb-0">Olvido su contraseña <a href="cambiarcontra.php"
                                     class="link-prymary">Recuperar</a></p>
                             <p class="small fw-bold mt-2 pt-1 mb-0">Change pass <a href="resetpass.php"
@@ -117,10 +143,10 @@ $_SESSION['intentosLogin'] = 0;
         </div>
 
     </section>
-        <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="../js/app2.js"></script>
     <?php

@@ -1,6 +1,7 @@
 <?php
+session_start(); 
  include_once("conexion.php");
- include_once("encabezado.php");
+ include_once("encabezadoAdmin.php");
  //eliminar
  if (isset($_REQUEST['Eliminar'])){
     echo" ";
@@ -8,7 +9,7 @@
     $imagen="SELECT imagen FROM productos WHERE idProd=".$_POST['username'];
     $resultado=$conexion->query($imagen);
     while ($fila = $resultado->fetch_assoc()) { 
-        if(unlink("imagenes/".$fila['imagen'])){
+        if(unlink("../imagenes/".$fila['imagen'])){
             //echo "sii";
         }
     }
@@ -27,7 +28,7 @@
         $ruta="../imagenes/".$_FILES['imagen']['name'];
         //echo $ruta;
         move_uploaded_file($_FILES['imagen']['tmp_name'],$ruta);
-          $sql = "INSERT INTO productos VALUES(".$_POST["id"].",'".$_POST["nombre"]."','".$_POST["categoria"]."','".$_POST["descripcion"]."',".$_POST["existencia"].",".$_POST["precio"].",'".$_FILES['imagen']['name']."','".$_POST["talla"]."');";
+          $sql = "INSERT INTO productos VALUES(".$_POST["id"].",'".$_POST["nombre"]."','".$_POST["categoria"]."','".$_POST["descripcion"]."',".$_POST["existencia"].",".$_POST["precio"].",'".$_FILES['imagen']['name']."','".$_POST["talla"]."',".(0).");";
           //echo $sql;
           $conexion->query($sql);
           if ($conexion->affected_rows >= 1){ //revisamos que se inserto un registro
@@ -158,7 +159,8 @@
                    if ($resultado->num_rows) {
                     while ($fila = $resultado->fetch_assoc()) { 
                         echo '<tr>';
-                        echo '<form action='.$_SERVER["PHP_SELF"]." method='post' id='for'>";
+                        
+                        echo '<form action="'.$_SERVER["PHP_SELF"].'" method="post"  class="formulario" enctype="multipart/form-data">"';
                         echo '<td>' . $fila['idProd'] . '<input type="hidden" name="username" id="username" value='.$fila['idProd'].">" .'</td>';
                         echo '<td>' . "<img style='height: 100px; width: 100px;' src='../imagenes/".$fila['imagen']. "' alt='no se encontro'>".'</td>';
                         echo '<td>' . $fila['nombre'] . '</td>';

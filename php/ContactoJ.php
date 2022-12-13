@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario de contacto</title>
-
+    <link rel="icon" type="image/x-icon" href="../imagenes/favicon.png">
     <link rel="stylesheet" href="../css/estilosContacto.css">
     <link rel="stylesheet" href="../css/font/awesome.css">
 

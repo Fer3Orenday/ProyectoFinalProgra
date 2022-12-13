@@ -14,7 +14,7 @@
           <div class="modal__content">
             <h2>Informacion de Tarjeta</h2>
     
-            <form>
+            <form action="opciones.php" method="post">
               <ul class="form-list">
                 <li class="form-list__row">
                   <label>Nombre</label>
@@ -30,15 +30,15 @@
                   <div>
                     <label>Fecha</label>
                     <div class="form-list__input-inline">
-                      <input type="text" name="cc_month" placeholder="MM"  pattern="\\d*" minlength="2" maxlength="2" required="" />
-                      <input type="text" name="cc_year" placeholder="YY"  pattern="\\d*" minlength="2" maxlength="2" required="" />
+                      <input type="text" name="cc_month" placeholder="MM"  minlength="2" maxlength="2"  />
+                      <input type="text" name="cc_year" placeholder="YY"  minlength="2" maxlength="2" required="" />
                     </div>
                   </div>
                   <div>
                     <label>
                       CVC
                     </label>
-                    <input type="text" name="cc_cvc" placeholder="123" pattern="\\d*" minlength="3" maxlength="4" required="" />
+                    <input type="text" name="cc_cvc" placeholder="123" minlength="3" maxlength="4" required="" />
                   </div>
                 </li>
                 <li class="form-list__row form-list__row--agree">
